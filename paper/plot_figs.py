@@ -64,7 +64,7 @@ for ax, letter, title in ((axa, 'a', r'one bond: $\times 4$'),
 for ax in (axa, axb):
     ax.set_xlim(-1.35, 2.75); ax.set_ylim(-3.75, 1.35)
 leg = [Line2D([], [], color=RED, lw=2.4, label='stronger'), Line2D([], [], color=BLUE, lw=2.4, label='weaker')]
-axb.legend(handles=leg, frameon=False, loc='lower left', bbox_to_anchor=(-0.04, 0.0), handlelength=1.4)
+axb.legend(handles=leg, frameon=False, loc='upper center', bbox_to_anchor=(0.5, 0.0), ncol=2, handlelength=1.4, columnspacing=1.2, borderaxespad=0)
 single = [(r['largest_relative_change_percent'], r['huckel_gap_abs_beta']) for r in curves if r['route'] == 'single']
 coop = [(r['largest_relative_change_percent'], r['huckel_gap_abs_beta']) for r in curves if r['route'] == 'cooperative']
 single, coop = np.array(single), np.array(coop)
