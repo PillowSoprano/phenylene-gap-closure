@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -46,7 +47,7 @@ The size of the gap does not answer it. The gap says how far the frontier levels
 We measure the change in three ways, each answering one question. The largest relative change of a coupling, the closure threshold $\rho$, asks how far the gap is from closing in the space of couplings; it is fixed by the carbon skeleton and can be computed exactly. The energy in a bond-length model asks what closing costs. The gap decrease per unit energy in density functional theory asks whether the pattern predicted by the model works in real molecules. The three agree where they can be compared: $\rho$ ranks the closure energies of the model with Spearman correlation 0.94, and the predicted pattern keeps most of its advantage under B3LYP.
 
 % =====================================================================
-\section{Why cooperation wins: the gap closes when Kekul\'e structures cancel}
+\section{Signed Kekul\'e structures and the closure threshold}
 \label{sec:why}
 
 We use the H\"uckel model of an alternant hydrocarbon with $2n$ carbon atoms, $n$ in each of the two sublattices (starred and unstarred). With Coulomb integrals set to zero and couplings $t_{ij}=-\beta_{ij}>0$ between bonded atoms $i$ (starred) and $j$ (unstarred), the Hamiltonian is
@@ -111,7 +112,7 @@ The setting that reaches the threshold is the one in the proof: the six bonds of
 A second argument certifies $\rho$ for any skeleton. Each Kekul\'e structure uses each bond at most once, so $\det T$ is an affine function of every single coupling. Its smallest value over the box of allowed couplings is therefore reached at a corner of the box, where each coupling sits at $1+\epsilon$ or $1-\epsilon$. Checking the sign of $\det T$ at all $2^{m}$ corners, with $m$ the number of bonds, just below and just above $\rho$ proves the threshold.
 
 % =====================================================================
-\section{How much in general: an exact threshold for any skeleton}
+\section{Exact computation of the threshold}
 \label{sec:howmuch}
 
 The closure threshold of Eq.~\eqref{eq:rho} is the regularity radius of the interval matrix $[T-\epsilon T,\,T+\epsilon T]$: the smallest $\epsilon$ at which the set of matrices contains a singular one \citep{PoljakRohn1993,Rohn2009,HartmanHladik2018}. For general matrices it is NP-hard to compute \citep{PoljakRohn1993}. Corner enumeration costs $2^m$ determinants, which is $4\times10^6$ for a [3]phenylene and $10^9$ for a [4]phenylene.
@@ -151,7 +152,7 @@ Table~\ref{tab:rho} lists the thresholds for the [$N$]phenylenes with $N\le4$. E
 Exactness matters in practice. A search that starts from random sign vectors and flips one sign at a time until Eq.~\eqref{eq:rohn} stops improving returns 0.1666 for zigzag [4]phenylene, above the exact value 0.1614.
 
 % =====================================================================
-\section{Where the change sits: closure at one end or along the chain}
+\section{Closing patterns and closing orbitals}
 \label{sec:where}
 
 The threshold is reached at a \emph{closing pattern}: every coupling at $1+\rho$ or $1-\rho$. When one Kekul\'e structure carries the minority sign, the proof of the Proposition identifies the pattern: its bonds strengthen and all others weaken. For the larger phenylenes, which have several minority structures, Eq.~\eqref{eq:rohn} returns the pattern through the maximizing $y$ and $z$.
@@ -172,7 +173,7 @@ Is the end that closes a choice of the algorithm? Collecting every sign-vector p
 Linear [3]phenylene shows the opposite case, a whole-chain closure inherited from a smaller molecule. Its threshold and its gap both equal those of benzocyclobutadiene (Table~\ref{tab:rho}). The mirror plane perpendicular to the long axis passes through the two central-ring atoms that do not belong to a four-membered ring. Orbitals that are antisymmetric under this mirror vanish on these two atoms, which disconnects the two halves; each half is benzocyclobutadiene. The spectrum of benzocyclobutadiene is therefore part of the spectrum of linear [3]phenylene, including its frontier pair. Applying the closing pattern of benzocyclobutadiene to both halves closes the antisymmetric block, so $\rho_{\text{lin-3}}\le\rho_{\text{BCB}}$; the exact computation gives equality.
 
 % =====================================================================
-\section{What closing costs: bond lengths, stiffness and the frontier orbitals}
+\section{Closure energy in a bond-length model}
 \label{sec:cost}
 
 A molecule changes its couplings by changing bond lengths, and bond lengths resist. We let each coupling depend on the change $\delta_b$ of its bond length from a common reference, $t_b=t_0-\alpha\,\delta_b$, and add a harmonic $\sigma$ energy \citep{SSH1979}:
