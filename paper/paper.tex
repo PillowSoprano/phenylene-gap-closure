@@ -26,7 +26,9 @@
 Closing the H\"uckel HOMO--LUMO gap of biphenylene through a single bond requires that bond to shorten by about 1.8~\AA, more than its own length; letting all fourteen bonds change, some up and some down, requires at most 0.12~\AA\ per bond. We explain why many small changes win, how large they must be and where they must sit in phenylenes, whose Kekul\'e structures do not all share one sign. The gap closes when Kekul\'e structures of opposite sign cancel. The smallest relative change of the couplings that achieves this, the closure threshold $\rho$, is the regularity radius of an interval matrix and depends only on the signed Kekul\'e structures. When one structure carries the minority sign, $\rho$ follows from $\sum_a q^{k_a}=1$ with $q=(1-\rho)/(1+\rho)$, giving $q^2=1/\varphi$ for benzocyclobutadiene and $q^3+q=1$ for biphenylene; for [$N$]phenylenes with $N\le4$ we compute $\rho$ exactly. Closure concentrates at one end of angular and branched phenylenes and spreads along linear ones. In a bond-length model, the closure energy is set by the squared gap over $P$, which measures how strongly the HOMO and LUMO partial bond orders differ on few bonds; $g_0^2/P$ and $\rho$ rank the closure energies of nine skeletons with Spearman correlations 0.97 and 0.94, against 0.72 for the relaxed gap. In a preregistered B3LYP test on biphenylene and angular [3]phenylene, the predicted pattern lowers the gap 2.4--3.6 times more efficiently than undoing bond alternation and retains about 80\% of its model advantage over random patterns.
 \end{abstract}
 
-\noindent\textbf{Keywords}\quad H\"uckel theory $\cdot$ Algebraic structure count $\cdot$ Phenylenes $\cdot$ HOMO--LUMO gap $\cdot$ Regularity radius $\cdot$ Diradical character
+\noindent\textbf{Keywords:} H\"uckel theory; Kekul\'e structures; HOMO--LUMO gap; interval-matrix regularity; phenylenes; diradical character
+
+\noindent\textbf{Mathematics Subject Classification (2020):} 92E10; 05C92; 15A18; 15A15
 
 % =====================================================================
 \section{Introduction}
@@ -285,15 +287,17 @@ All calculations used B3LYP/def2-SVP with density fitting in PySCF 2.14; geometr
 \end{enumerate}
 The criteria and their thresholds were not changed.
 
-\section*{Declarations}
+\section*{Statements and Declarations}
 
-\paragraph{Funding} The author did not receive support from any organization for the submitted work.
+\paragraph{Funding} No funds, grants, or other financial support were received for this study.
 
-\paragraph{Competing interests} The author has no relevant financial or non-financial interests to disclose.
+\paragraph{Competing interests} The author declares no relevant financial or non-financial competing interests.
 
-\paragraph{Data availability} The raw results, optimized geometries, all computed B3LYP points, the preregistration file with its SHA-256 change log, and every number plotted in the figures are archived at Zenodo, \href{https://doi.org/10.5281/zenodo.23448791}{doi:10.5281/zenodo.23448791} (release v1.0.0), and maintained at \url{https://github.com/PillowSoprano/phenylene-gap-closure}, under CC BY 4.0.
+\paragraph{Author contributions} Xiyao Yu conceived the study, developed the mathematical framework, performed the analytical and computational investigations, analyzed the results, and wrote and revised the manuscript.
 
-\paragraph{Code availability} The code that produces every number, table and figure (Python 3.13; NumPy, SciPy, NetworkX, PySCF 2.14, pyberny) is in the same archive and repository under the MIT License; the repository README maps each result in the paper to the script that produces it.
+\paragraph{Data and code availability} The source code, computational results, validation protocol and change log, and data underlying all figures are publicly available at \url{https://github.com/PillowSoprano/phenylene-gap-closure}. The code is released under the MIT License, and the data and figures under CC BY 4.0.
+
+\paragraph{Ethics approval} Not applicable. This study involved theoretical analysis and computational simulations and did not involve human participants or animals.
 
 \bibliographystyle{unsrtnat}
 \bibliography{refs}

@@ -14,8 +14,8 @@ date-released: 2026-10-18
 version: "1.0.0"
 keywords:
   - "Hückel theory"
-  - "algebraic structure count"
-  - "phenylenes"
+  - "Kekulé structures"
   - "HOMO–LUMO gap"
-  - "regularity radius"
+  - "interval-matrix regularity"
+  - "phenylenes"
   - "diradical character"
