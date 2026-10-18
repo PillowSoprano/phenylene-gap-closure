@@ -1,15 +1,16 @@
 Spearman with closure energy (9 skeletons):
-  g0^2/P           0.967 (p = 2.2e-05)
-  local estimate   0.983 (p = 1.9e-06)
-  rho              0.941 (p = 1.5e-04)
-  uniform gap      0.900 (p = 9.4e-04)
-  relaxed gap g0   0.717 (p = 3.0e-02)
+  g0^2/P, 2 dp     0.967 (exact permutation p = 60/362880 = 1.65e-04)   <- as printed in Table 2
+  g0^2/P           0.967 (exact permutation p = 60/362880 = 1.65e-04)
+  local estimate   0.983 (exact permutation p = 18/362880 = 4.96e-05)
+  rho              0.941 (exact permutation p = 200/362880 = 5.51e-04)
+  uniform gap      0.900 (exact permutation p = 736/362880 = 2.03e-03)
+  relaxed gap g0   0.717 (exact permutation p = 13378/362880 = 3.69e-02)
 
 biphenylene: L_inf 3.00 vs 0.189; L1 3.00 vs 2.64; sum of squares 9.00 vs 0.50
 bond-length change for x4 coupling: 1.83 A ; for 18.9%: 0.115 A
 model single-bond closure from relaxed geometry: bond shortened by 2.38 A, energy +113.1 eV (vs 4.18 eV cooperative)
 model (local) gap crossing biphenylene / angular[3]: 0.66 eV
-isotropic ceiling d=14: median 1/|cos| over 8-sample medians ~ 5.27; 1/median|cos| = 5.30
-isotropic ceiling d=22: median 1/|cos| over 8-sample medians ~ 6.66; 1/median|cos| = 6.75
+isotropic ceiling d=14: median 1/|cos| over 8-sample medians ~ 5.27; 1/median|cos| = 5.30; large-d limit sqrt(d)/0.6745 = 5.55
+isotropic ceiling d=22: median 1/|cos| over 8-sample medians ~ 6.66; 1/median|cos| = 6.75; large-d limit sqrt(d)/0.6745 = 6.95
 biphenylene: model-predicted eta_P / median random = 6.66  (B3LYP measured: 5.48)
 angular3: model-predicted eta_P / median random = 8.69  (B3LYP measured: 6.59)

@@ -11,3 +11,10 @@ license: MIT
 repository-code: "https://github.com/PillowSoprano/phenylene-gap-closure"
 date-released: 2026-10-18
 version: "1.0.0"
+keywords:
+  - "Hückel theory"
+  - "algebraic structure count"
+  - "phenylenes"
+  - "HOMO–LUMO gap"
+  - "regularity radius"
+  - "diradical character"

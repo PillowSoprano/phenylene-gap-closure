@@ -24,9 +24,9 @@ Closing the Hückel gap of biphenylene through a single bond needs that bond to 
 |---|---|---|
 | Closed forms q² = 1/φ, q³ + q = 1; Rohn criterion vs. vertex enumeration | `notebooks/bond_gap_research_seed_v0.2.ipynb` (§2, §5) | notebook output |
 | Exact thresholds ρ (Table 1) | `scripts/01_thresholds.py` | `results/thresholds.json` |
-| Closure energies in the bond-length model, K = 21, 43, 60 eV Å⁻² | `scripts/02_bond_model.py` | `results/bond_model.json` |
+| Closure energies in the bond-length model, k_σ = 21, 43, 60 eV Å⁻² | `scripts/02_bond_model.py` | `results/bond_model.json` |
 | Tables 1 and 2, Hessian eigenvalue range | `scripts/03_tables.py` | `results/table1.json`, `results/table2.json` |
-| Spearman correlations and p values; 1.8 Å, 0.12 Å, 113 eV; model gap crossing at 0.66 eV; isotropic ceiling 5.3/6.7; model ratios 6.7/8.7 | `scripts/04_review_checks.py` | `results/04_review_checks.log` |
+| Spearman correlations and exact permutation p values (all 9! orderings); 1.8 Å, 0.12 Å, 113 eV; model gap crossing at 0.66 eV; isotropic ceiling 5.3/6.7; model ratios 6.7/8.7 | `scripts/04_review_checks.py` | `results/04_review_checks.log` |
 | Number of closing patterns (bent, triangular, zigzag, helical [4]) | `scripts/05_closing_patterns.py` | `results/05_closing_patterns.log` |
 | Angular [3]phenylene: two mirror closing patterns | `notebooks/bond_gap_v0.3_baseline_audit.ipynb` (§1c) | notebook output |
 | Helical and zigzag [4]phenylene share their signed Kekulé structures | `scripts/06_kekule_correspondence.py` | `results/06_kekule_correspondence.log` |

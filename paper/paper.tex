@@ -20,8 +20,10 @@
 \maketitle
 
 \begin{abstract}
-Closing the H\"uckel HOMO--LUMO gap of biphenylene through a single bond requires that bond to shorten by about 1.8~\AA, more than its own length. Letting all fourteen bonds change, some up and some down, requires at most 0.12~\AA\ per bond. We explain why many small changes win and determine how large they must be and where they must sit in phenylenes, alternant hydrocarbons whose Kekul\'e structures do not all share one sign. The gap closes when Kekul\'e structures of opposite sign cancel. The smallest uniform relative change of the bond couplings that achieves this, the closure threshold $\rho$, is the regularity radius of an interval matrix and depends only on the signed Kekul\'e structures. When one structure carries the minority sign, $\rho$ follows from $\sum_a q^{k_a}=1$ with $q=(1-\rho)/(1+\rho)$, which gives $q^2=1/\varphi$ for benzocyclobutadiene and $q^3+q=1$ for biphenylene; for [$N$]phenylenes with $N\le4$ we compute $\rho$ exactly. Closure concentrates at one end of angular and branched phenylenes and spreads along linear ones. In a bond-length model with $\sigma$ stiffness, the energy needed to close the gap is set by the squared gap over $P$, a measure of how strongly the HOMO and LUMO partial bond orders differ on few bonds. Within this model $g_0^2/P$ and $\rho$ rank the closure energies of nine skeletons with Spearman correlations 0.97 and 0.94, against 0.72 for the gap of the relaxed geometry. In a preregistered B3LYP test on biphenylene and angular [3]phenylene, the bond pattern predicted by the model lowers the gap 2.4--3.6 times more efficiently than undoing bond alternation. Against random patterns it retains about 80\% of the advantage it has in the model. The crossing in open-shell character between the two molecules that the model predicts appears, at larger deformation than predicted.
+Closing the H\"uckel HOMO--LUMO gap of biphenylene through a single bond requires that bond to shorten by about 1.8~\AA, more than its own length; letting all fourteen bonds change, some up and some down, requires at most 0.12~\AA\ per bond. We explain why many small changes win, how large they must be and where they must sit in phenylenes, whose Kekul\'e structures do not all share one sign. The gap closes when Kekul\'e structures of opposite sign cancel. The smallest relative change of the couplings that achieves this, the closure threshold $\rho$, is the regularity radius of an interval matrix and depends only on the signed Kekul\'e structures. When one structure carries the minority sign, $\rho$ follows from $\sum_a q^{k_a}=1$ with $q=(1-\rho)/(1+\rho)$, giving $q^2=1/\varphi$ for benzocyclobutadiene and $q^3+q=1$ for biphenylene; for [$N$]phenylenes with $N\le4$ we compute $\rho$ exactly. Closure concentrates at one end of angular and branched phenylenes and spreads along linear ones. In a bond-length model, the closure energy is set by the squared gap over $P$, which measures how strongly the HOMO and LUMO partial bond orders differ on few bonds; $g_0^2/P$ and $\rho$ rank the closure energies of nine skeletons with Spearman correlations 0.97 and 0.94, against 0.72 for the relaxed gap. In a preregistered B3LYP test on biphenylene and angular [3]phenylene, the predicted pattern lowers the gap 2.4--3.6 times more efficiently than undoing bond alternation and retains about 80\% of its model advantage over random patterns.
 \end{abstract}
+
+\noindent\textbf{Keywords}\quad H\"uckel theory $\cdot$ Algebraic structure count $\cdot$ Phenylenes $\cdot$ HOMO--LUMO gap $\cdot$ Regularity radius $\cdot$ Diradical character
 
 % =====================================================================
 \section{Introduction}
@@ -60,9 +62,9 @@ and it closes exactly when $\det T=0$. All couplings equal one unless stated; en
 \det T=\sum_{M}s_M\prod_{(ij)\in M}t_{ij},\qquad s_M=\pm1 .
 \label{eq:expansion}
 \end{equation}
-Two Kekul\'e structures differ by a set of disjoint cycles whose bonds alternate between them, and their signs differ exactly when an odd number of these cycles have length $4k$ \citep{DewarLH1952}. With equal couplings, $|\det T|$ is the algebraic structure count: the number of Kekul\'e structures of one sign minus the number of the other \citep{Wilcox1968,Wilcox1969}. In benzenoid hydrocarbons every pair differs by $(4k+2)$-cycles, all terms share one sign, and $\det T$ stays positive for any positive couplings. The gap of benzene or naphthalene cannot be closed without removing a bond.
+Two Kekul\'e structures differ by a set of disjoint cycles whose bonds alternate between them, and their signs differ exactly when an odd number of these cycles have length $4k$ \citep{DewarLH1952}. With equal couplings, $|\det T|$ is the algebraic structure count: the number of Kekul\'e structures of one sign minus the number of the other \citep{Wilcox1968,Wilcox1969}; recurrence formulas compute it efficiently for any bipartite graph \citep{BodrozaPantic2004}. In benzenoid hydrocarbons every pair differs by $(4k+2)$-cycles, all terms share one sign, and $\det T$ stays positive for any positive couplings. The gap of benzene or naphthalene cannot be closed without removing a bond.
 
-Four-membered rings bring terms of the opposite sign. Benzocyclobutadiene has three Kekul\'e structures and an algebraic structure count of one; biphenylene has five and three. For phenylenes the algebraic structure count equals the number of Kekul\'e structures of the benzenoid obtained by squeezing out the four-membered rings \citep{Gutman1993}, as the values in Table~\ref{tab:rho} illustrate (biphenylene and naphthalene: three; linear [3]phenylene and anthracene: four), and the Kekul\'e structures of phenylenes have been studied in detail \citep{GutmanFurtula2006}. In both, exactly one structure carries the minority sign: in biphenylene it is the structure in which both bonds joining the benzene rings are double, so that each benzene ring keeps only two double bonds.
+Four-membered rings bring terms of the opposite sign. Benzocyclobutadiene has three Kekul\'e structures and an algebraic structure count of one; biphenylene has five and three. For phenylenes the algebraic structure count equals the number of Kekul\'e structures of the hexagonal squeeze, the benzenoid obtained by squeezing out the four-membered rings \citep{Gutman1993}, as the values in Table~\ref{tab:rho} illustrate (biphenylene and naphthalene: three; linear [3]phenylene and anthracene: four). The Kekul\'e structures of phenylenes have been studied in detail \citep{GutmanFurtula2006}, and many of their $\pi$-electron properties correlate with those of the hexagonal squeeze \citep{GutmanMarkovic1996}. The closure threshold does not: naphthalene, the squeeze of biphenylene, cannot be closed at all (Table~\ref{tab:rho}). In benzocyclobutadiene and biphenylene, exactly one structure carries the minority sign: in biphenylene it is the structure in which both bonds joining the benzene rings are double, so that each benzene ring keeps only two double bonds.
 
 \textbf{Changing one bond is inefficient.} Changing the coupling of bond $(ij)$ by $t$ changes $T$ by a rank-one matrix, and
 \begin{equation}
@@ -78,11 +80,12 @@ The gap closes at $t^*=-1/(T^{-1})_{ji}$. For biphenylene the smallest feasible 
 Bonds that are absent stay absent, and for $\epsilon<1$ every coupling stays positive. Because $\rho$ is defined through $\det T$ alone, it depends only on the signed Kekul\'e structures: two skeletons whose Kekul\'e structures correspond bond by bond, with the same signs, have the same threshold even when their spectra differ. For a skeleton with one minority structure, $\rho$ has a closed form.
 
 \begin{proposition}
-Let $M_-$ be the only Kekul\'e structure whose sign differs from all others, let $M_1,\dots,M_m$ be the others, and let $k_a=|M_a\setminus M_-|$, the number of bonds in which $M_a$ differs from $M_-$. Then $\rho=(1-q)/(1+q)$, where $q\in(0,1)$ solves
+Let the skeleton have $K$ Kekul\'e structures and $\det T\neq0$ at equal couplings. Let $M_-$ be the only Kekul\'e structure whose sign differs from all others, let $M_1,\dots,M_{K-1}$ be the others, and let $k_a=|M_a\setminus M_-|$, the number of bonds in which $M_a$ differs from $M_-$. Then $\rho=(1-q)/(1+q)$, where $q$ is the unique root in $(0,1)$ of
 \begin{equation}
-\sum_{a=1}^{m}q^{k_a}=1 .
+\sum_{a=1}^{K-1}q^{k_a}=1 .
 \label{eq:closedform}
 \end{equation}
+The root is unique because the left side increases strictly from 0 to $K-1\ge2$ on $[0,1]$.
 \end{proposition}
 
 \begin{proof}
@@ -103,7 +106,7 @@ q^3+q=1,\qquad q=0.68233,\qquad \rho_{\text{biphenylene}}=0.18883 .
 \end{equation}
 The setting that reaches the threshold is the one in the proof: the six bonds of the minority structure grow by 18.9\% and the other eight shrink by 18.9\% (Fig.~\ref{fig:hook}b).
 
-A second argument certifies $\rho$ for any skeleton. Each Kekul\'e structure uses each bond at most once, so $\det T$ is an affine function of every single coupling. Its smallest value over the box of allowed couplings is therefore reached at a corner of the box, where each coupling sits at $1+\epsilon$ or $1-\epsilon$. Checking the sign of $\det T$ at all $2^{m}$ corners ($m$ bonds) just below and just above $\rho$ proves the threshold.
+A second argument certifies $\rho$ for any skeleton. Each Kekul\'e structure uses each bond at most once, so $\det T$ is an affine function of every single coupling. Its smallest value over the box of allowed couplings is therefore reached at a corner of the box, where each coupling sits at $1+\epsilon$ or $1-\epsilon$. Checking the sign of $\det T$ at all $2^{m}$ corners, with $m$ the number of bonds, just below and just above $\rho$ proves the threshold.
 
 % =====================================================================
 \section{How much in general: an exact threshold for any skeleton}
@@ -136,7 +139,7 @@ linear [4]phenylene & 24 & 29 & 5 & 0.348 & 0.0756 & $-83\%$ \\
 bent [4]phenylene & 24 & 31 & 7 & 0.565 & 0.1265 & $+233\%$ \\
 helical [4]phenylene & 24 & 34 & 8 & 0.703 & 0.1614 & $+400\%$ \\
 zigzag [4]phenylene & 24 & 34 & 8 & 0.743 & 0.1614 & $+400\%$ \\
-triangular [4]phenylene & 24 & 35 & 9 & 0.905 & 0.2031 & $+800\%$ \\
+triangular [4]phenylene & 24 & 35 & 9 & 0.905 & 0.2031 & $+900\%$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -172,9 +175,9 @@ Linear [3]phenylene shows the opposite case, a whole-chain closure inherited fro
 
 A molecule changes its couplings by changing bond lengths, and bond lengths resist. We let each coupling depend on the change $\delta_b$ of its bond length from a common reference, $t_b=t_0-\alpha\,\delta_b$, and add a harmonic $\sigma$ energy \citep{SSH1979}:
 \begin{equation}
-E(\delta)=-2\sum_k\sigma_k\bigl(T(\delta)\bigr)+\sum_b\Bigl(\tfrac{K}{2}\delta_b^2+c\,\delta_b\Bigr),\qquad c=-2\alpha p_{\text{ref}} .
+E(\delta)=-2\sum_k\sigma_k\bigl(T(\delta)\bigr)+\sum_b\Bigl(\tfrac{k_\sigma}{2}\delta_b^2+c\,\delta_b\Bigr),\qquad c=-2\alpha p_{\text{ref}} .
 \end{equation}
-With $p_{\text{ref}}=2/3$, benzene is undistorted at $\delta=0$, and at equilibrium $\delta_b=2\alpha(p_{\text{ref}}-p_b)/K$, a linear relation between bond length and bond order $p_b$. We use $t_0=2.5$~eV and $\alpha=4.1$~eV\,\AA$^{-1}$ \citep{SSH1979} and $K=43$~eV\,\AA$^{-2}$, which gives a slope of 0.19~\AA\ per unit bond order; $K=21$ and $60$~eV\,\AA$^{-2}$ give the same ranking of all results below (Appendix~\ref{app:model}).
+With $p_{\text{ref}}=2/3$, benzene is undistorted at $\delta=0$, and at equilibrium $\delta_b=2\alpha(p_{\text{ref}}-p_b)/k_\sigma$, a linear relation between bond length and bond order $p_b$. We use $t_0=2.5$~eV and $\alpha=4.1$~eV\,\AA$^{-1}$ \citep{SSH1979} and a $\sigma$ force constant $k_\sigma=43$~eV\,\AA$^{-2}$, which gives a slope of 0.19~\AA\ per unit bond order; $k_\sigma=21$ and $60$~eV\,\AA$^{-2}$ give the same ranking of all results below (Appendix~\ref{app:model}).
 
 Relaxing the bond lengths widens the gap in all nine skeletons: the molecule moves away from closure. We define the \emph{closure energy} $\Delta E$ as the lowest energy we find on the set of geometries with $\det T(\delta)=0$, measured from the relaxed geometry, using constrained optimization from many starting points. It ranges from 1.9~eV for linear [4]phenylene to 5.5~eV for triangular [4]phenylene (Table~\ref{tab:cost}). The topological threshold already ranks these energies: $\rho$, which knows nothing about bond lengths, has Spearman correlation 0.94 with $\Delta E$ and places biphenylene (0.189) before angular [3]phenylene (0.196), as $\Delta E$ does.
 
@@ -196,7 +199,7 @@ P=\sum_{(ij)}\bigl(p^{\mathrm{H}}_{ij}-p^{\mathrm{L}}_{ij}\bigr)^2=\sum_{(ij)}(u
 \end{equation}
 so that $a^\T a=4\alpha^2P$. $P$ is large when the frontier orbitals concentrate on few bonds.
 
-\textbf{The denominator is almost a constant.} $F=K\,I+\alpha^2\,\partial^2E_\pi/\partial t^2$, and the second term is the bond--bond polarizability \citep{CoulsonLH1947,BHM1966}. Across the nine skeletons the eigenvalues of $F$ lie between 27.9 and 43.0~eV\,\AA$^{-2}$. Setting $F\approx\kappa I$ in Eq.~\eqref{eq:local} gives
+\textbf{The denominator is almost a constant.} $F=k_\sigma I+\alpha^2\,\partial^2E_\pi/\partial t^2$, and the second term is the bond--bond polarizability \citep{CoulsonLH1947,BHM1966}. Across the nine skeletons the eigenvalues of $F$ lie between 27.9 and 43.0~eV\,\AA$^{-2}$. Setting $F\approx\kappa I$ in Eq.~\eqref{eq:local} gives
 \begin{equation}
 \Delta E\approx\frac{\kappa}{8\alpha^2}\,\frac{g_0^2}{P}.
 \label{eq:g2p}
@@ -204,24 +207,24 @@ so that $a^\T a=4\alpha^2P$. $P$ is large when the frontier orbitals concentrate
 
 \begin{table}[t]
 \centering
-\caption{Closure energy in the bond-length model ($K=43$~eV\,\AA$^{-2}$). $\rho$: closure threshold (Table~\ref{tab:rho}); $g_0$: gap of the relaxed geometry; $P$: Eq.~\eqref{eq:P}; $\Delta E_{\text{loc}}$: Eq.~\eqref{eq:local}; $\Delta E$: lowest closure energy found. Last rows: Spearman rank correlation with $\Delta E$ and its two-sided $p$ value ($n=9$).}
+\caption{Closure energy in the bond-length model ($k_\sigma=43$~eV\,\AA$^{-2}$). $\rho$: closure threshold (Table~\ref{tab:rho}); $g_0$: gap of the relaxed geometry; $P$: Eq.~\eqref{eq:P}; $\Delta E_{\text{loc}}$: Eq.~\eqref{eq:local}; $\Delta E$: lowest closure energy found. Last rows: Spearman rank correlation with $\Delta E$ and its two-sided $p$ value from the exact permutation distribution (all $9!$ orderings; ties as mid-ranks).}
 \label{tab:cost}
 \begin{tabular}{lrrrrrr}
 \toprule
 skeleton & $\rho$ & $g_0$ (eV) & $P$ & $g_0^2/P$ & $\Delta E_{\text{loc}}$ (eV) & $\Delta E$ (eV) \\
 \midrule
-linear [4]phenylene & 0.076 & 1.35 & 0.268 & 6.8 & 1.93 & 1.87 \\
-benzocyclobutadiene & 0.120 & 2.09 & 0.644 & 6.8 & 2.00 & 2.01 \\
-linear [3]phenylene & 0.120 & 1.75 & 0.326 & 9.4 & 2.67 & 2.70 \\
-bent [4]phenylene & 0.126 & 1.77 & 0.282 & 11.2 & 3.11 & 3.05 \\
-biphenylene & 0.189 & 2.58 & 0.449 & 14.9 & 4.31 & 4.18 \\
-helical [4]phenylene & 0.161 & 2.08 & 0.212 & 20.4 & 5.49 & 4.51 \\
-zigzag [4]phenylene & 0.161 & 2.20 & 0.229 & 21.2 & 5.93 & 4.52 \\
-angular [3]phenylene & 0.196 & 2.39 & 0.274 & 20.8 & 5.63 & 4.77 \\
-triangular [4]phenylene & 0.203 & 2.48 & 0.226 & 27.3 & 7.48 & 5.55 \\
+linear [4]phenylene & 0.076 & 1.35 & 0.268 & 6.79 & 1.93 & 1.87 \\
+benzocyclobutadiene & 0.120 & 2.09 & 0.644 & 6.78 & 2.00 & 2.01 \\
+linear [3]phenylene & 0.120 & 1.75 & 0.326 & 9.37 & 2.67 & 2.70 \\
+bent [4]phenylene & 0.126 & 1.77 & 0.282 & 11.16 & 3.11 & 3.05 \\
+biphenylene & 0.189 & 2.58 & 0.449 & 14.87 & 4.31 & 4.18 \\
+helical [4]phenylene & 0.161 & 2.08 & 0.212 & 20.40 & 5.49 & 4.51 \\
+zigzag [4]phenylene & 0.161 & 2.20 & 0.229 & 21.22 & 5.93 & 4.52 \\
+angular [3]phenylene & 0.196 & 2.39 & 0.274 & 20.83 & 5.63 & 4.77 \\
+triangular [4]phenylene & 0.203 & 2.48 & 0.226 & 27.34 & 7.48 & 5.55 \\
 \midrule
 Spearman with $\Delta E$ & 0.94 & 0.72 & & 0.97 & 0.98 & \\
-$p$ & $2\times10^{-4}$ & 0.03 & & $2\times10^{-5}$ & $2\times10^{-6}$ & \\
+$p$ & $5.5\times10^{-4}$ & 0.037 & & $1.7\times10^{-4}$ & $5.0\times10^{-5}$ & \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -236,7 +239,7 @@ The two factors come from different orbital pairs. The gap gradient depends only
 
 Does the predicted pattern of a crude model still lower the gap efficiently in a real molecule, and does the reversal between biphenylene and angular [3]phenylene in Table~\ref{tab:cost} carry over to their open-shell character? Before computing any displaced geometry we fixed the directions, the controls, the observables and two pass criteria in a file whose SHA-256 hash is reported with the data (Appendix~\ref{app:dft}).
 
-\textbf{Protocol.} Both molecules were optimized with B3LYP/def2-SVP \citep{Becke1993,LYP1988,WeigendAhlrichs2005} in PySCF \citep{PySCF2020}. The equilibrium gaps are 4.10~eV (biphenylene) and 3.75~eV (angular [3]phenylene). Three kinds of bond-length change were applied, all scaled to the same model energy $\tfrac12x^\T Fx$: the predicted pattern $x^*$; a \emph{bond-equalizing control} that undoes the relaxed bond-length alternation of the model; and eight random patterns, each with both signs. Bond-length changes were converted to in-plane Cartesian displacements of the carbon atoms with the Wilson $B$ matrix \citep{Wilson1955}, hydrogens following their carbons. With fewer C--C bonds than in-plane carbon coordinates the solution is not unique; we took the minimum-norm least-squares solution and iterated it to convergence. Every pattern is realized exactly, the bond-length changes matching the targets to $10^{-15}$~\AA; the bond angles adjust, and their strain enters the B3LYP energy. At each geometry, without further relaxation, we computed the B3LYP energy and gap. Along the predicted pattern we also computed the diradical character $y_0=1-2\tau/(1+\tau^2)$, where $\tau$ is half the difference between the occupations of the highest occupied and lowest unoccupied UHF natural orbitals \citep{Yamaguchi1975,Nakano2007}, and the spin contamination $\langle S^2\rangle$ of the broken-symmetry UB3LYP singlet.
+\textbf{Protocol.} Both molecules were optimized with B3LYP/def2-SVP \citep{Becke1993,LYP1988,WeigendAhlrichs2005} in PySCF \citep{PySCF2020}. The equilibrium gaps are 4.10~eV (biphenylene) and 3.75~eV (angular [3]phenylene). Three kinds of bond-length change were applied, all scaled to the same model energy $\tfrac12x^\T Fx$: the predicted pattern $x^*$; a \emph{bond-equalizing control} that undoes the relaxed bond-length alternation of the model; and eight random patterns, each with both signs. Bond-length changes were converted to in-plane Cartesian displacements of the carbon atoms with the Wilson $B$ matrix \citep{Wilson1955}, hydrogens following their carbons. With fewer C--C bonds than in-plane carbon coordinates the solution is not unique; we took the minimum-norm least-squares solution and iterated it to convergence. Every pattern is realized exactly, the bond-length changes matching the targets to $10^{-15}$~\AA; the bond angles adjust, and their strain enters the B3LYP energy. At each geometry, without further relaxation, we computed the closed-shell (restricted) B3LYP energy and the Kohn--Sham HOMO--LUMO gap of this restricted solution; throughout, ``gap'' means this orbital gap and deformation energies are differences of restricted energies. The broken-symmetry singlet lies below the restricted one only beyond a model energy of 1.5~eV: by at most 0.02~eV at 2~eV and by 0.08--0.19~eV at 3~eV. Criterion 1 is therefore unaffected, and the deformation energies quoted below for open-shell onsets and crossings, all at or below 2~eV, would move by at most 0.02~eV with broken-symmetry energies. Along the predicted pattern we also computed the diradical character $y_0=1-2\tau/(1+\tau^2)$, where $\tau$ is half the difference between the occupations of the highest occupied and lowest unoccupied UHF natural orbitals \citep{Yamaguchi1975,Nakano2007}, and the spin contamination $\langle S^2\rangle$ of the broken-symmetry UB3LYP singlet.
 
 \begin{figure}[t]
 \centering
@@ -245,7 +248,7 @@ Does the predicted pattern of a crude model still lower the gap efficiently in a
 \label{fig:dft}
 \end{figure}
 
-\textbf{Criterion 1: the predicted pattern lowers the gap most efficiently.} At a model energy of 1.5~eV we compared the efficiency $\eta$, the gap decrease per eV of B3LYP deformation energy, with the median over the eight random patterns, each taken with its better sign. The criterion required a ratio of at least 1.5 in both molecules. The ratios are 5.5 for biphenylene ($\eta=1.27$ against 0.23) and 6.6 for angular [3]phenylene ($\eta=1.10$ against 0.17), and no random pattern reaches half the efficiency of the predicted one (Fig.~\ref{fig:dft}). The threshold of 1.5 was low: when the response is isotropic, the best possible direction beats random ones in 14 and 22 dimensions by a median ratio near $\sqrt d/0.67$, that is 5.3 and 6.7. Two comparisons carry more information. In the model itself, the predicted pattern beats the same eight random patterns by factors of 6.7 and 8.7; B3LYP retains 82\% and 76\% of this advantage. And the predicted pattern lowers the gap 2.4 and 3.6 times more efficiently than the bond-equalizing control ($\eta=0.52$ and 0.31), the physically natural alternative.
+\textbf{Criterion 1: the predicted pattern lowers the gap most efficiently.} At a model energy of 1.5~eV we compared the efficiency $\eta$, the gap decrease per eV of B3LYP deformation energy, with the median over the eight random patterns, each taken with its better sign. The criterion required a ratio of at least 1.5 in both molecules. The ratios are 5.5 for biphenylene ($\eta=1.27$ against 0.23) and 6.6 for angular [3]phenylene ($\eta=1.10$ against 0.17), and no random pattern reaches half the efficiency of the predicted one (Fig.~\ref{fig:dft}). The threshold of 1.5 was low: when the response is isotropic, the best possible direction beats random ones in 14 and 22 dimensions by a median ratio of 5.3 and 6.7 when eight random directions are drawn (computed by sampling; the large-$d$ limit $\sqrt d/0.67$ gives 5.6 and 7.0). Two comparisons carry more information. In the model itself, the predicted pattern beats the same eight random patterns by factors of 6.7 and 8.7; B3LYP retains 82\% and 76\% of this advantage. And the predicted pattern lowers the gap 2.4 and 3.6 times more efficiently than the bond-equalizing control ($\eta=0.52$ and 0.31), the physically natural alternative.
 
 \textbf{Criterion 2: biphenylene becomes open-shell first.} The criterion required a larger $y_0$ for biphenylene at every matched deformation energy and an earlier onset of spin symmetry breaking ($\langle S^2\rangle>0.1$). Neither holds. Angular [3]phenylene starts with the larger diradical character, 0.116 against 0.086, keeps it up to 1.17~eV, and breaks spin symmetry first, at 1.76 against 1.87~eV. The criterion was stricter than the model. With the numbers of Table~\ref{tab:cost}, Eq.~\eqref{eq:local} predicts the gap of angular [3]phenylene to stay below that of biphenylene up to 0.66~eV of deformation and to be overtaken only then. B3LYP shows this crossing at larger deformation: $y_0$ of biphenylene overtakes at 1.17~eV, and its gap, 0.34~eV higher at the start, falls below that of angular [3]phenylene at 2.0~eV. We report the crossing as an exploratory result outside the preregistered criteria. In both molecules spin symmetry breaks while the B3LYP gap is still 2.0--2.1~eV.
 
@@ -265,7 +268,7 @@ The Proposition covers every skeleton with one minority Kekul\'e structure, and 
 \section{Bond-length model}
 \label{app:model}
 
-Parameters: $t_0=2.5$~eV, $\alpha=4.1$~eV\,\AA$^{-1}$, $K\in\{21,43,60\}$~eV\,\AA$^{-2}$, $p_{\text{ref}}=2/3$. Relaxed geometries were found by BFGS from $\delta=0$. Closure energies were obtained by sequential quadratic programming with the constraint $\det T(\delta)/t_0^{\,n}=0$, whose gradient follows from the adjugate. Starting points were the closing pattern of Eq.~\eqref{eq:rohn}, the relaxed geometry plus multiples of it, and random perturbations of the relaxed geometry; the lowest feasible result is reported. Closure energies at $K=21$, 43 and 60~eV\,\AA$^{-2}$ range over 1.7--2.9, 1.9--5.5 and 2.2--7.7~eV and rank the nine skeletons identically. For triangular [4]phenylene the relaxed frontier level is doubly degenerate; there $a$ in Eq.~\eqref{eq:local} is taken in the direction of the two-dimensional frontier subspace that maximizes $a^\T F^{-1}a$, and $P$ likewise.
+Parameters: $t_0=2.5$~eV, $\alpha=4.1$~eV\,\AA$^{-1}$, $k_\sigma\in\{21,43,60\}$~eV\,\AA$^{-2}$, $p_{\text{ref}}=2/3$. Relaxed geometries were found by BFGS from $\delta=0$. Closure energies were obtained by sequential quadratic programming with the constraint $\det T(\delta)/t_0^{\,n}=0$, whose gradient follows from the adjugate. Starting points were the closing pattern of Eq.~\eqref{eq:rohn}, the relaxed geometry plus multiples of it, and random perturbations of the relaxed geometry; the lowest feasible result is reported. Closure energies at $k_\sigma=21$, 43 and 60~eV\,\AA$^{-2}$ range over 1.7--2.9, 1.9--5.5 and 2.2--7.7~eV and rank the nine skeletons identically. For triangular [4]phenylene the relaxed frontier level is doubly degenerate; there $a$ in Eq.~\eqref{eq:local} is taken in the direction of the two-dimensional frontier subspace that maximizes $a^\T F^{-1}a$, and $P$ likewise.
 
 \section{DFT protocol and deviations}
 \label{app:dft}
@@ -279,8 +282,17 @@ All calculations used B3LYP/def2-SVP with density fitting in PySCF 2.14; geometr
 \end{enumerate}
 The criteria and their thresholds were not changed.
 
-\section*{Data and code}
-Code, raw results, the preregistration file with its change log, and every number plotted in the figures are available at \url{https://github.com/PillowSoprano/phenylene-gap-closure} (code under the MIT License; data, figures and text under CC BY 4.0).
+\section*{Declarations}
+
+% CHECK: confirm the funding statement before submission.
+\paragraph{Funding} The author did not receive support from any organization for the submitted work.
+
+\paragraph{Competing interests} The author has no relevant financial or non-financial interests to disclose.
+
+% TODO: replace XXXXXXX with the Zenodo DOI minted for release v1.0.0.
+\paragraph{Data availability} The raw results, optimized geometries, all computed B3LYP points, the preregistration file with its SHA-256 change log, and every number plotted in the figures are archived at Zenodo, \href{https://doi.org/10.5281/zenodo.XXXXXXX}{doi:10.5281/zenodo.XXXXXXX} (release v1.0.0), and maintained at \url{https://github.com/PillowSoprano/phenylene-gap-closure}, under CC BY 4.0.
+
+\paragraph{Code availability} The code that produces every number, table and figure (Python 3.13; NumPy, SciPy, NetworkX, PySCF 2.14, pyberny) is in the same archive and repository under the MIT License; the repository README maps each result in the paper to the script that produces it.
 
 \bibliographystyle{unsrtnat}
 \bibliography{refs}

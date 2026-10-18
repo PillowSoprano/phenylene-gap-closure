@@ -7,8 +7,19 @@ from scipy.stats import spearmanr
 from gapclosure import phenylene, triangular4, benzocyclobutadiene, bipartite, BondModel
 t2 = json.load(open(ROOT/'results'/'table2.json')); t1 = {r['name']: r for r in json.load(open(ROOT/'results'/'table1.json'))}
 names = [x['name'] for x in t2]; dE = [x['dE'] for x in t2]
-def sp(v): r = spearmanr(dE, v); return f'{r.statistic:.3f} (p = {r.pvalue:.1e})'
+from itertools import permutations
+from scipy.stats import rankdata
+_ry = rankdata(dE); _RY = _ry[np.array(list(permutations(range(len(dE)))))]   # all 9! orderings
+_RYc = _RY - _RY.mean(1, keepdims=True)
+def sp(v):
+    """Spearman correlation with an exact two-sided permutation p value (ties handled by mid-ranks).
+    The t approximation of scipy is unreliable for n = 9 and gives p values below the exact minimum 2/9!."""
+    rx = rankdata(v); rxc = rx - rx.mean(); r0 = spearmanr(dE, v).statistic
+    r = _RYc @ rxc / np.sqrt((rxc**2).sum() * (_RYc**2).sum(1))
+    k = int(np.sum(np.abs(r) >= abs(r0) - 1e-12))
+    return f'{r0:.3f} (exact permutation p = {k}/{len(r)} = {k/len(r):.2e})'
 print('Spearman with closure energy (9 skeletons):')
+print('  g0^2/P, 2 dp    ', sp([round(x['g2P'], 2) for x in t2]), '  <- as printed in Table 2')
 print('  g0^2/P          ', sp([x['g2P'] for x in t2]))
 print('  local estimate  ', sp([x['E_hess'] for x in t2]))
 print('  rho             ', sp([t1[n]['rho'] for n in names]))
@@ -38,7 +49,7 @@ print(f'model (local) gap crossing biphenylene / angular[3]: {cross("biphenylene
 rng = np.random.default_rng(0)
 for dname, dd_ in (('biphenylene', 14), ('angular [3]', 22)):
     v = rng.normal(size=(200000, dd_)); c = np.abs(v[:, 0])/np.linalg.norm(v, axis=1)
-    print(f'isotropic ceiling d={dd_}: median 1/|cos| over 8-sample medians ~ {np.median([1/np.median(c[j*8:(j+1)*8]) for j in range(20000)]):.2f}; 1/median|cos| = {1/np.median(c):.2f}')
+    print(f'isotropic ceiling d={dd_}: median 1/|cos| over 8-sample medians ~ {np.median([1/np.median(c[j*8:(j+1)*8]) for j in range(20000)]):.2f}; 1/median|cos| = {1/np.median(c):.2f}; large-d limit sqrt(d)/0.6745 = {np.sqrt(dd_)/0.6745:.2f}')
 # model-predicted ratio for the actual 8 random directions (linear gap response, equal model energy)
 D = json.load(open(ROOT/'dft_validation'/'directions.json'))
 for key, ch in (('biphenylene', []), ('angular3', ['L'])):
