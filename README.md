@@ -2,6 +2,8 @@
 
 Code, data and manuscript source for the paper of the same title.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23448791.svg)](https://doi.org/10.5281/zenodo.23448791)
+
 > Author: Xiyao Yu (School of Chemistry, Chemical Engineering and Biotechnology, Nanyang Technological University, Singapore; ORCID [0009-0006-2673-5269](https://orcid.org/0009-0006-2673-5269); XYU029@e.ntu.edu.sg) · Status: manuscript in preparation · Code: MIT (`LICENSE`) · Data, figures and text: CC BY 4.0 (`LICENSE-DATA`)
 
 Closing the Hückel gap of biphenylene through a single bond needs that bond to shorten by about 1.8 Å; letting all fourteen bonds change, some up and some down, needs at most 0.12 Å per bond. The repository computes how large such cooperative changes must be (the closure threshold ρ, exact for [N]phenylenes with N ≤ 4), where they must sit, what they cost in a bond-length model, and tests the predicted bond pattern in a preregistered B3LYP calculation.
@@ -65,4 +67,6 @@ python evaluate.py                       # applies the preregistered criteria
 
 ## Citation
 
-See `CITATION.cff`. A journal reference will be added once the paper is published.
+Code and data: Yu, X. (2026). *Many small bond changes close the HOMO–LUMO gap of phenylenes long before one large change does: code and data* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23448791
+
+See also `CITATION.cff`. A journal reference will be added once the paper is published.
