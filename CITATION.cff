@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Many small bond changes close the HOMO–LUMO gap of phenylenes long before one large change does: code and data"
+authors:
+  - family-names: "Yu"
+    given-names: "Xiyao"
+    affiliation: "School of Chemistry, Chemical Engineering and Biotechnology, Nanyang Technological University, Singapore"
+    email: "XYU029@e.ntu.edu.sg"
+    orcid: "https://orcid.org/0009-0006-2673-5269"
+license: MIT
+repository-code: "https://github.com/PillowSoprano/phenylene-gap-closure"
+date-released: 2026-10-18
+version: "1.0.0"

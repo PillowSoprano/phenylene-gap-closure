@@ -1,0 +1,4 @@
+/home/claude/work/dft/run_points.py:30: RuntimeWarning: invalid value encountered in scalar divide
+  cos = float(ach@target_dr/np.linalg.norm(ach)/np.linalg.norm(target_dr))
+ref          Em= 0.0 dE=  0.000 eV gap= 3.755 cos=nan maxerr=0.0e+00 y0=0.1160 S2=0.000 dBS=+0.000  (2512s)
+P@0.5        Em= 0.5 dE=  0.464 eV gap= 2.881 cos=1.0000 maxerr=4.4e-16 y0=0.2901 S2=0.000 dBS=+0.000  (2277s)

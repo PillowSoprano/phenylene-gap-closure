@@ -1,0 +1,11 @@
+Data, figures and manuscript text in this repository
+(results/, dft_validation/ data files, paper/fig_data/, paper/*.pdf, paper/paper.tex, notebooks/ outputs)
+are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Copyright (c) 2026 Xiyao Yu
+
+You may share and adapt this material for any purpose, provided you give appropriate credit,
+link to the license and indicate if changes were made.
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Source code (src/, scripts/, *.py) is licensed separately under the MIT License (see LICENSE).

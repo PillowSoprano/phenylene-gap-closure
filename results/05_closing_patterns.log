@@ -1,0 +1,14 @@
+bent[4]: rho=0.126471619937, optimal sign-vector pairs=2 (z1 fixed), distinct closing-orbital ring shares:
+     (np.float64(0.19), np.float64(0.25), np.float64(0.24), np.float64(0.14), np.float64(0.12), np.float64(0.04), np.float64(0.02)) sigma_min=2.7e-17
+   (109s)
+triangular[4]: rho=0.203142021055, optimal sign-vector pairs=6 (z1 fixed), distinct closing-orbital ring shares:
+     (np.float64(0.27), np.float64(0.07), np.float64(0.02), np.float64(0.07), np.float64(0.02), np.float64(0.3), np.float64(0.25)) sigma_min=1.1e-15
+     (np.float64(0.27), np.float64(0.3), np.float64(0.25), np.float64(0.07), np.float64(0.02), np.float64(0.07), np.float64(0.02)) sigma_min=1.5e-15
+     (np.float64(0.27), np.float64(0.07), np.float64(0.02), np.float64(0.3), np.float64(0.25), np.float64(0.07), np.float64(0.02)) sigma_min=1.2e-15
+   (109s)
+zigzag[4]: rho=0.161395486329, optimal sign-vector pairs=2 (z1 fixed), distinct closing-orbital ring shares:
+     (np.float64(0.15), np.float64(0.19), np.float64(0.14), np.float64(0.02), np.float64(0.14), np.float64(0.19), np.float64(0.15)) sigma_min=3.0e-16
+   (102s)
+helical[4]: rho=0.161395486329, optimal sign-vector pairs=2 (z1 fixed), distinct closing-orbital ring shares:
+     (np.float64(0.15), np.float64(0.19), np.float64(0.15), np.float64(0.02), np.float64(0.15), np.float64(0.19), np.float64(0.15)) sigma_min=1.3e-16
+   (99s)
