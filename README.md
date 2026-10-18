@@ -15,7 +15,7 @@ Closing the Hückel gap of biphenylene through a single bond needs that bond to 
 | `src/gapclosure.py` | Molecular graphs, Kekulé structures and algebraic structure count, exact closure threshold (Rohn criterion and full vertex enumeration), Hückel + σ-spring bond-length model |
 | `scripts/` | Numbered scripts that produce every number in the paper (see below) |
 | `results/` | Outputs of `scripts/` (JSON tables and log files) |
-| `dft_validation/` | Preregistered B3LYP test: protocol (`PREREGISTRATION.md` with SHA-256 change log), scripts, optimized geometries, all computed points |
+| `dft_validation/` | Preregistered B3LYP test: protocol (`PREREGISTRATION.md`, Chinese original with SHA-256 change log; `PREREGISTRATION_en.md`, English translation), scripts, optimized geometries, all computed points |
 | `dft_validation/superseded/` | Results replaced during the work, kept because the change log refers to them |
 | `notebooks/` | Exploration notebooks v0.2 (thresholds, phenylene series, bond-length model) and v0.3.2 (local closure estimate, B3LYP evaluation); both executed |
 | `paper/` | `paper.tex`, `refs.bib`, compiled `paper.pdf`, figures, `fig_data/` (every plotted number as CSV) and the two figure scripts |
@@ -63,7 +63,7 @@ NT=2 python run_points.py angular3 '["L"]'   # ~5 h
 python evaluate.py                       # applies the preregistered criteria
 ```
 
-`run_points.py` saves after every geometry and skips points already present, so it can be stopped and restarted. The protocol and pass criteria were written to `PREREGISTRATION.md` before any displaced geometry was computed; every later change is appended there with the SHA-256 of the file after the change (`PREREGISTRATION.sha256`). Appendix B of the paper lists the four changes.
+`run_points.py` saves after every geometry and skips points already present, so it can be stopped and restarted. The protocol and pass criteria were written to `PREREGISTRATION.md` before any displaced geometry was computed; every later change is appended there with the SHA-256 of the file after the change (`PREREGISTRATION.sha256`). The change log has six entries; Appendix B of the paper groups them into four changes. `PREREGISTRATION_en.md` is an English translation added after the study; the Chinese original and its hash chain are authoritative.
 
 ## Citation
 
