@@ -1,0 +1,27 @@
+[2] -     n= 1 K=5 ASC=3 gap 0.890-0.890 lower=0.1758 (gap 0.1758, BS 0.1556) upper=0.1888
+  (0s)
+[3] A     n= 2 K=13 ASC=5 gap 0.844-0.844 lower=0.1584 (gap 0.1584, BS 0.1236) upper=0.1970
+[3] L     n= 1 K=12 ASC=4 gap 0.525-0.525 lower=0.0996 (gap 0.0996, BS 0.0950) upper=0.1598
+  (0s)
+[4] AA    n= 4 K=34 ASC=8 gap 0.703-0.743 lower=0.1367 (gap 0.1367, BS 0.1037) upper=0.1666
+[4] AL    n= 4 K=31 ASC=7 gap 0.565-0.565 lower=0.1048 (gap 0.1048, BS 0.0914) upper=0.1619
+[4] LL    n= 1 K=29 ASC=5 gap 0.348-0.348 lower=0.0651 (gap 0.0651, BS 0.0649) upper=0.1248
+  (0s)
+[5] AAA   n= 8 K=89 ASC=13 gap 0.672-0.727 lower=0.1324 (gap 0.1324, BS 0.0934) upper=0.1724
+[5] AAL   n= 8 K=81 ASC=11 gap 0.503-0.510 lower=0.0934 (gap 0.0934, BS 0.0813) upper=0.1503
+[5] ALA   n= 4 K=80 ASC=12 gap 0.594-0.603 lower=0.1108 (gap 0.1108, BS 0.0873) upper=0.1731
+[5] ALL   n= 4 K=75 ASC=9 gap 0.383-0.383 lower=0.0707 (gap 0.0707, BS 0.0673) upper=0.1287
+[5] LAL   n= 2 K=74 ASC=10 gap 0.546-0.546 lower=0.1006 (gap 0.1006, BS 0.0783) upper=0.1624
+[5] LLL   n= 1 K=70 ASC=6 gap 0.249-0.249 lower=0.0474 (gap 0.0461, BS 0.0474) upper=0.1152
+  (0s)
+[6] AAAA  n=16 K=233 ASC=21 gap 0.624-0.685 lower=0.1243 (gap 0.1243, BS 0.0861) upper=0.1575
+[6] AAAL  n=16 K=212 ASC=18 gap 0.512-0.523 lower=0.0950 (gap 0.0950, BS 0.0778) upper=0.1576
+[6] AALA  n=16 K=209 ASC=19 gap 0.532-0.544 lower=0.0992 (gap 0.0992, BS 0.0796) upper=0.1517
+[6] AALL  n= 8 K=196 ASC=14 gap 0.354-0.355 lower=0.0650 (gap 0.0650, BS 0.0621) upper=0.1197
+[6] ALAL  n= 8 K=191 ASC=17 gap 0.539-0.553 lower=0.1012 (gap 0.1012, BS 0.0759) upper=0.1613
+[6] ALLA  n= 4 K=194 ASC=16 gap 0.417-0.418 lower=0.0767 (gap 0.0767, BS 0.0687) upper=0.1321
+[6] ALLL  n= 4 K=181 ASC=11 gap 0.275-0.275 lower=0.0506 (gap 0.0505, BS 0.0506) upper=0.1165
+[6] LAAL  n= 4 K=193 ASC=15 gap 0.421-0.427 lower=0.0780 (gap 0.0780, BS 0.0695) upper=0.1321
+[6] LALL  n= 4 K=179 ASC=13 gap 0.392-0.392 lower=0.0720 (gap 0.0720, BS 0.0633) upper=0.1295
+[6] LLLL  n= 1 K=169 ASC=7 gap 0.186-0.186 lower=0.0363 (gap 0.0344, BS 0.0363) upper=0.0769
+  (3s)

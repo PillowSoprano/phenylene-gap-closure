@@ -1,0 +1,9 @@
+benzocyclobutadiene: rho=0.1197259230  min det at rho(1-1e-8)=1.056e-08  at rho(1+1e-8)=-1.056e-08  rounding bound 6.3e-15
+biphenylene: rho=0.1888289520  min det at rho(1-1e-8)=3.616e-08  at rho(1+1e-8)=-3.616e-08  rounding bound 2.5e-14
+linear[3]: rho=0.1197259230  min det at rho(1-1e-8)=2.921e-08  at rho(1+1e-8)=-4.727e-08  rounding bound 8.1e-14
+angular[3]: rho=0.1961605581  min det at rho(1-1e-8)=8.935e-08  at rho(1+1e-8)=-8.935e-08  rounding bound 1.6e-13
+linear[4]: rho=0.0755808337  min det at rho(1-1e-8)=4.378e-08  at rho(1+1e-8)=-4.378e-08  rounding bound 2.2e-13
+zigzag[4]: rho=0.1613954863  min det at rho(1-1e-8)=5.116e-08  at rho(1+1e-8)=-5.116e-08  rounding bound 6.4e-13
+helical[4]: rho=0.1613954863  min det at rho(1-1e-8)=5.116e-08  at rho(1+1e-8)=-5.116e-08  rounding bound 6.4e-13
+bent[4]: rho=0.1264716199  min det at rho(1-1e-8)=8.446e-08  at rho(1+1e-8)=-8.446e-08  rounding bound 4.0e-13
+triangular[4]: rho=0.2031420211  min det at rho(1-1e-8)=2.261e-07  at rho(1+1e-8)=-2.261e-07  rounding bound 1.0e-12

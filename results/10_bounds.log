@@ -1,0 +1,11 @@
+benzene              minus= 0 gap-bound=0.5000 BS=0.3333 rho=1.0000 Kek=1.0000 Rohn=1.0000 Rump=5.8
+naphthalene          minus= 0 gap-bound=0.2684 BS=0.2291 rho=1.0000 Kek=1.0000 Rohn=1.0000 Rump=6.7
+benzocyclobutadiene  minus= 1 gap-bound=0.1114 BS=0.1197 rho=0.1197 Kek=0.1197 Rohn=0.3333 Rump=2.8
+biphenylene          minus= 1 gap-bound=0.1758 BS=0.1556 rho=0.1888 Kek=0.1888 Rohn=0.6000 Rump=5.4
+linear[3]            minus= 4 gap-bound=0.0996 BS=0.0950 rho=0.1197 Kek=0.1598 Rohn=0.5000 Rump=5.0
+angular[3]           minus= 4 gap-bound=0.1584 BS=0.1236 rho=0.1962 Kek=0.1970 Rohn=0.7143 Rump=6.5
+linear[4]            minus=12 gap-bound=0.0651 BS=0.0649 rho=0.0756 Kek=0.1248 Rohn=0.3846 Rump=4.5
+bent[4]              minus=12 gap-bound=0.1048 BS=0.0914 rho=0.1265 Kek=0.1619 Rohn=0.5385 Rump=6.4
+helical[4]           minus=13 gap-bound=0.1293 BS=0.1037 rho=0.1614 Kek=0.1666 Rohn=0.6667 Rump=7.3
+zigzag[4]            minus=13 gap-bound=0.1367 BS=0.1037 rho=0.1614 Kek=0.1666 Rohn=0.6667 Rump=7.3
+triangular[4]        minus=13 gap-bound=0.1637 BS=0.1119 rho=0.2031 Kek=0.2048 Rohn=0.8182 Rump=7.8

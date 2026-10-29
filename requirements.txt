@@ -3,6 +3,7 @@ numpy==2.5.3
 scipy==1.18.1
 matplotlib==3.11.2
 networkx==3.6.1
+sympy                # scripts/09 only (symbolic check of the bond correspondence)
 pyscf==2.14.0
 pyberny==0.7.0
 nbformat==5.11.1

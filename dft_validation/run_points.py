@@ -31,7 +31,7 @@ def displace(target_dr, iters=8):
     return X, float(np.abs(ach-target_dr).max()), cos
 
 points = [('ref', None, 0.0, np.zeros(len(r_eq)))]
-# random controls first: criterion 1 depends only on them (and P@1.5)
+# random controls first: the efficiency comparison depends only on them (and P@1.5)
 for i, r in enumerate(D['R']):
     for sgn in (+1, -1): points.append((f'R{i}{"+" if sgn>0 else "-"}@1.5', 'R', 1.5, sgn*np.sqrt(1.5)*np.array(r)))
 for lab, key in [('P', 'P'), ('BLA', 'BLA')]:

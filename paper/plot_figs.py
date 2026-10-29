@@ -1,4 +1,4 @@
-"""Draw Figs. 1-3 from fig_data/*.csv only (no calculations).
+"""Draw fig1_hook.pdf and fig2_closing.pdf (Figs. 1 and 3 of the paper) from fig_data/*.csv only (no calculations).
 Figures are produced at their final printed width so that no scaling happens in LaTeX."""
 import csv, os
 from pathlib import Path
@@ -64,7 +64,7 @@ for ax, letter, title in ((axa, 'a', r'one bond: $\times 4$'),
 for ax in (axa, axb):
     ax.set_xlim(-1.35, 2.75); ax.set_ylim(-3.75, 1.35)
 leg = [Line2D([], [], color=RED, lw=2.4, label='stronger'), Line2D([], [], color=BLUE, lw=2.4, label='weaker')]
-axb.legend(handles=leg, frameon=False, loc='upper center', bbox_to_anchor=(0.5, 0.0), ncol=2, handlelength=1.4, columnspacing=1.2, borderaxespad=0)
+axb.legend(handles=leg, frameon=False, loc='lower left', bbox_to_anchor=(-0.04, 0.0), handlelength=1.4)
 single = [(r['largest_relative_change_percent'], r['huckel_gap_abs_beta']) for r in curves if r['route'] == 'single']
 coop = [(r['largest_relative_change_percent'], r['huckel_gap_abs_beta']) for r in curves if r['route'] == 'cooperative']
 single, coop = np.array(single), np.array(coop)
@@ -119,42 +119,5 @@ lax.text(0.0, 1.25, 'closing-orbital weight on an atom', va='bottom')
 fig.savefig('fig2_closing.pdf'); fig.savefig('fig2_closing.png', dpi=200)
 plt.close(fig)
 
-# ======================= Fig. 3 =======================
-lad, rnd = read('fig3_ladders.csv'), read('fig3_random.csv')
-def ladder(mol, kind):
-    pts = sorted([r for r in lad if r['molecule'] == mol and r['pattern'] == kind], key=lambda r: r['model_energy_eV'])
-    return pts
-fig = plt.figure(figsize=(FIG_W, 2.35))
-gs = fig.add_gridspec(1, 3, left=0.075, right=0.985, bottom=0.30, top=0.90, wspace=0.38)
-axes = [fig.add_subplot(gs[0, i]) for i in range(3)]
-names = {'biphenylene': 'biphenylene', 'angular3': r'angular [3]phenylene'}
-for ax, mol, letter in ((axes[0], 'biphenylene', 'a'), (axes[1], 'angular3', 'b')):
-    rr = [r for r in rnd if r['molecule'] == mol]
-    ax.scatter([r['b3lyp_deformation_energy_eV'] for r in rr], [r['gap_decrease_eV'] for r in rr],
-               s=9, color=MUTED, lw=0, zorder=2)
-    for kind, colour, marker in (('P', BLUE, 'o'), ('BLA', ORANGE, 's')):
-        L = ladder(mol, kind)
-        ax.plot([r['b3lyp_deformation_energy_eV'] for r in L], [r['gap_decrease_eV'] for r in L],
-                marker=marker, ms=3, color=colour, lw=1.3, zorder=3)
-    ax.axhline(0, color='#bdbdbd', lw=0.5, zorder=1)
-    ax.set_xlim(-0.1, 4.25); ax.set_xlabel('B3LYP deformation energy (eV)')
-    ax.set_title(names[mol], pad=4); panel_letter(ax, letter, x=-0.2, y=1.03)
-    ax.yaxis.grid(True, color=GRID, lw=0.5); ax.set_axisbelow(True)
-axes[0].set_ylabel('gap decrease (eV)')
-ax = axes[2]
-for mol, ls, marker in (('biphenylene', '-', 'o'), ('angular3', (0, (4, 2)), 's')):
-    L = ladder(mol, 'P')
-    ax.plot([r['b3lyp_deformation_energy_eV'] for r in L], [r['y0'] for r in L], marker=marker, ms=3,
-            color=BLUE, lw=1.3, ls=ls)
-ax.text(2.45, 0.80, 'biphenylene', ha='right', va='center')
-ax.text(1.95, 0.47, r'angular [3]', ha='left', va='top')
-ax.set_xlim(-0.1, 3.0); ax.set_xlabel('B3LYP deformation energy (eV)'); ax.set_ylabel(r'diradical character $y_0$')
-ax.set_title('along the predicted pattern', pad=4); panel_letter(ax, 'c', x=-0.2, y=1.03)
-ax.yaxis.grid(True, color=GRID, lw=0.5); ax.set_axisbelow(True)
-handles = [Line2D([], [], color=BLUE, marker='o', ms=3, lw=1.3, label='predicted pattern'),
-           Line2D([], [], color=ORANGE, marker='s', ms=3, lw=1.3, label='bond-equalizing control'),
-           Line2D([], [], color=MUTED, marker='o', ms=3, lw=0, label=r'random patterns (model energy 1.5 eV)')]
-fig.legend(handles=handles, frameon=False, loc='lower left', bbox_to_anchor=(0.06, 0.0), ncol=3, handlelength=1.8)
-fig.savefig('fig3_dft.pdf'); fig.savefig('fig3_dft.png', dpi=200)
-plt.close(fig)
+# fig_kekule.pdf, fig3_dft_2panel.pdf and fig_corresp.pdf (Figs. 2, 4 and 5) are drawn by plot_new_figs.py
 print('figures written')

@@ -1,0 +1,10 @@
+linear polymer: top of band 3 = +5.54e-16 at k = +0.000; bottom of band 4 = -5.54e-16 at k = -3.142  (indirect gap -1.11e-15)
+linear  N=  10  gap=7.8539e-02  N^2*gap=7.854
+linear  N=  20  gap=2.2118e-02  N^2*gap=8.847
+linear  N=  40  gap=5.8521e-03  N^2*gap=9.363
+linear  N=  80  gap=1.5030e-03  N^2*gap=9.619
+linear  N= 160  gap=3.8067e-04  N^2*gap=9.745
+N=  6  zigzag gap=0.6851  helical gap=0.6243
+N= 10  zigzag gap=0.6369  helical gap=0.5576
+N= 20  zigzag gap=0.5912  helical gap=0.5142
+N= 40  zigzag gap=0.5787  helical gap=0.4997

@@ -1,0 +1,9 @@
+benzocyclobutadiene {'m': 9, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': 1.300844470890887e-15, 'smallest_nonzero': 0.12840386817252772, 'free_bonds': []} 0s
+biphenylene {'m': 14, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': -1.0709825905020276e-15, 'smallest_nonzero': 0.28488832347980836, 'free_bonds': []} 0s
+linear[3] {'m': 22, 'n_sing': 16, 'adjacent_pairs': 32, 'yz': [True, False, False, True, False, True, True, False, False, True, True, False, True, False, False, True], 'min_det': 3.543003052120705e-15, 'smallest_nonzero': 0.17768180225521726, 'free_bonds': [(7, 8), (8, 9), (10, 11), (11, 6)]} 0s
+angular[3] {'m': 22, 'n_sing': 2, 'adjacent_pairs': 0, 'yz': [True, True], 'min_det': 6.884302953563084e-15, 'smallest_nonzero': 0.03593428670170784, 'free_bonds': []} 0s
+linear[4] {'m': 30, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': -2.2289729355681647e-15, 'smallest_nonzero': 0.10573069912092617, 'free_bonds': []} 15s
+zigzag[4] {'m': 30, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': 8.47578564039491e-17, 'smallest_nonzero': 0.07157058938355573, 'free_bonds': []} 15s
+helical[4] {'m': 30, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': 2.1127182730385124e-15, 'smallest_nonzero': 0.07157058938355754, 'free_bonds': []} 15s
+bent[4] {'m': 30, 'n_sing': 1, 'adjacent_pairs': 0, 'yz': [True], 'min_det': 4.658111632763689e-16, 'smallest_nonzero': 0.04155311179142287, 'free_bonds': []} 15s
+triangular[4] {'m': 30, 'n_sing': 3, 'adjacent_pairs': 0, 'yz': [True, True, True], 'min_det': -6.071771055126138e-14, 'smallest_nonzero': 0.08380530024246781, 'free_bonds': []} 15s

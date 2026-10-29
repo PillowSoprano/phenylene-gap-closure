@@ -1,0 +1,3 @@
+[4]: 4 L/A sequences, 9 graphs; all same-sequence pairs equivalent: True (0s)
+[5]: 8 L/A sequences, 27 graphs; all same-sequence pairs equivalent: True (0s)
+[6]: 16 L/A sequences, 81 graphs; all same-sequence pairs equivalent: True (3s)
