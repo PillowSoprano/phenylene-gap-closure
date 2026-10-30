@@ -1,0 +1,14 @@
+1. One minority structure (Theorem 2)
+  benzocyclobutadiene: K = 3, k_a = [2, 4]
+    root of sum q^k_a = 1: q = 0.786151377757423, rho = 0.119725922956805
+    closed form q^2 = 1/phi: q = 0.786151377757423, rho = 0.119725922956805
+    rho in thresholds.json: 0.119725922956805   |difference| = 1.2e-16
+  biphenylene: K = 5, k_a = [2, 4, 4, 6]
+    root of sum q^k_a = 1: q = 0.682327803828019, rho = 0.188828952032499
+    closed form q^3 + q = 1: q = 0.682327803828019, rho = 0.188828952032499
+    rho in thresholds.json: 0.188828952032499   |difference| = 1.1e-16
+
+2. Linear [3]phenylene and benzocyclobutadiene
+  spectrum of benzocyclobutadiene (8 eigenvalues) contained in that of linear [3]phenylene (18 eigenvalues), with multiplicity: True
+  gap: benzocyclobutadiene 0.524719389544, linear [3]phenylene 0.524719389544  (units of |beta|)
+  rho: benzocyclobutadiene 0.119725922957, linear [3]phenylene 0.119725922957

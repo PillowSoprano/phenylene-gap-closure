@@ -1,15 +1,3 @@
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-# LaTeX build products
-paper/*.aux
-paper/*.bbl
-paper/*.blg
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.log
-paper/*.out
-paper/*.synctex.gz
-# figure previews
-paper/*.png
 .DS_Store

@@ -27,7 +27,8 @@ def displace(target_dr, iters=8):
         X[:nC, :2] += dx
         for hk, ck in H_of.items(): X[hk, :2] += dx[ck]
     ach = bond_lengths(X) - r_eq
-    cos = float(ach@target_dr/np.linalg.norm(ach)/np.linalg.norm(target_dr))
+    nt = np.linalg.norm(target_dr)   # zero for the reference point, where the cosine is undefined
+    cos = float(ach@target_dr/np.linalg.norm(ach)/nt) if nt > 0 else float('nan')
     return X, float(np.abs(ach-target_dr).max()), cos
 
 points = [('ref', None, 0.0, np.zeros(len(r_eq)))]

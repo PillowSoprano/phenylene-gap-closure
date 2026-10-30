@@ -1,5 +1,5 @@
-Data, figures and manuscript text in this repository
-(results/, dft_validation/ data files, paper/fig_data/, paper/*.pdf, paper/paper.tex, notebooks/ outputs)
+Data and figures in this repository
+(results/, the data files in dft_validation/, figures/fig_data/ and figures/*.pdf)
 are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
 Copyright (c) 2026 Xiyao Yu

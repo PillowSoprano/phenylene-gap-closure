@@ -9,5 +9,6 @@ authors:
     orcid: "https://orcid.org/0009-0006-2673-5269"
 license: MIT
 repository-code: "https://github.com/PillowSoprano/phenylene-gap-closure"
-date-released: 2026-10-29
-version: "1.1.0"
+doi: "10.5281/zenodo.23448791"
+date-released: 2026-10-30
+version: "1.1.1"

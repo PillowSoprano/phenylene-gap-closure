@@ -21,10 +21,16 @@ def inc(g):
 Gz,Tz,bz,tz=inc(gz); Gh,Th,bh,th=inc(gh)
 gm=iso.GraphMatcher(Gz,Gh,node_match=lambda a,b:a['kind']==b['kind'])
 print('isomorphic',gm.is_isomorphic())
-mp={a[1]:b[1] for a,b in gm.mapping.items() if a[0]=='e'}
-# count all correspondences
-n_all=sum(1 for _ in iso.GraphMatcher(Gz,Gh,node_match=lambda a,b:a['kind']==b['kind']).isomorphisms_iter())
-print('number of correspondences',n_all)
+# The correspondence is not unique, and the first one found by VF2 depends on Python's hash seed.
+# Enumerate all of them and report the one that keeps the largest number of bond labels (it is unique).
+maps=set()
+for f in iso.GraphMatcher(Gz,Gh,node_match=lambda a,b:a['kind']==b['kind']).isomorphisms_iter():
+    maps.add(tuple(f[('e',k)][1] for k in range(len(bz))))
+print('number of correspondences',len(maps))
+kept=lambda m: sum(m[k]==k for k in range(len(m)))
+best=max(map(kept,maps)); top=[m for m in maps if kept(m)==best]
+assert len(top)==1
+mp=dict(enumerate(top[0]))
 # verify polynomial identity symbolically
 x=sp.symbols('x0:30')
 def poly(T,bix,terms,sub):
