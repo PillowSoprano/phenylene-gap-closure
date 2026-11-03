@@ -3,7 +3,7 @@ numpy==2.5.3
 scipy==1.18.1
 matplotlib==3.11.2
 networkx==3.6.1
-sympy==1.14.0        # scripts/09 only (symbolic check of the bond correspondence)
+sympy==1.14.0        # scripts/09 and 17 (symbolic checks)
 pyscf==2.14.0
 pyberny==0.7.0
 # figures/plot_figs.py renders text with LaTeX: a TeX installation with amsmath and the cm-super fonts is required.

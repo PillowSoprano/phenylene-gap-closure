@@ -1,0 +1,22 @@
+{
+ "corollary_cases": 41,
+ "linear[3]": {
+  "reduced": "kappa_L*x10*x12 + kappa_R*x13*x9",
+  "rho": 0.11972592295680512,
+  "kappa_L": 6.661338147750939e-16,
+  "kappa_R": 7.771561172376096e-16,
+  "kappa_equal": 0.5,
+  "max_abs_kappa_on_face": 7.771561172376096e-16,
+  "max_abs_det_on_face": 5.4802728689919924e-15
+ },
+ "angular[3]": {
+  "reduced": "kappa_L*kappa_R*x12 + x11*x13*x9",
+  "rho": 0.1961605581327162,
+  "kappa_L": -0.42235939725014005,
+  "kappa_R": 1.0281022180070316,
+  "kappa_equal": 0.5,
+  "Pi_over_tau": 0.43422863310898335,
+  "kappa_L_kappa_R": -0.43422863310898197,
+  "mirror_maps_L_to_R_and_fixes_Pi_tau": true
+ }
+}

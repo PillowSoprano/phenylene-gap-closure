@@ -1,0 +1,33 @@
+ladder form equals T of linear [N]phenylene (singular values, |det|, bond count):
+  N=2: True, |det T|=3.000000 = N+1, bonds 14 = 8N-2: True
+  N=3: True, |det T|=4.000000 = N+1, bonds 22 = 8N-2: True
+  N=4: True, |det T|=5.000000 = N+1, bonds 30 = 8N-2: True
+  N=5: True, |det T|=6.000000 = N+1, bonds 38 = 8N-2: True
+  N=6: True, |det T|=7.000000 = N+1, bonds 46 = 8N-2: True
+  N=7: True, |det T|=8.000000 = N+1, bonds 54 = 8N-2: True
+  N=8: True, |det T|=9.000000 = N+1, bonds 62 = 8N-2: True
+inverse in the order (a, c; b): endpoint block [[G,-G],[-G,G]], middle block -11^T/(N+1), mixed entries <= 1
+  N=2: endpoint block True, middle block True, max mixed entry 0.6667, ||G|| = l_N True
+  N=3: endpoint block True, middle block True, max mixed entry 0.7500, ||G|| = l_N True
+  N=5: endpoint block True, middle block True, max mixed entry 0.8333, ||G|| = l_N True
+  N=10: endpoint block True, middle block True, max mixed entry 0.9091, ||G|| = l_N True
+  N=40: endpoint block True, middle block True, max mixed entry 0.9756, ||G|| = l_N True
+  N=160: endpoint block True, middle block True, max mixed entry 0.9938, ||G|| = l_N True
+closing witness: rungs x (1-eps), connecting bonds x (1+eps), eps = tan^2(theta_N)
+  N=2: eps=0.333333, sigma_min=6.7e-17
+  N=3: eps=0.171573, sigma_min=8.5e-17
+  N=5: eps=0.071797, sigma_min=9.3e-18
+  N=10: eps=0.020672, sigma_min=3.9e-17
+  N=40: eps=0.001469, sigma_min=1.4e-16
+   N lower(analytic)   BS lower  rho exact      rho_F      tan^2  (N+1)^2 rho_F  (N+1)^2 g
+   2        0.066667   0.155573   0.188829   0.188829   0.333333        1.69946    8.01075
+   3        0.044560   0.094987   0.119726   0.119726   0.171573        1.91561    8.39551
+   4        0.032565   0.064891   0.075581   0.075581   0.105573        1.88952    8.71077
+   5        0.025131   0.047408              0.055125   0.071797        1.98450    8.94799
+   6        0.020125   0.036254              0.040813   0.052095        1.99983    9.12510
+  10        0.010267   0.016225              0.017590   0.020672        2.12840    9.50325
+  20        0.003657   0.004915              0.005139   0.005616        2.26644    9.75415
+  40        0.001151   0.001369              0.001402   0.001469        2.35665    9.83744
+  80        0.000330   0.000363              0.000367   0.000376        2.40904    9.86114
+ 160        0.000089   0.000093              0.000094   0.000095        2.43741    9.86744
+limits: pi^2/4 = 2.46740, pi^2 = 9.86960
