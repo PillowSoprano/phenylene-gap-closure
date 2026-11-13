@@ -1,9 +1,11 @@
-# Versions used for every result in the paper (Python 3.13).
+# Python packages used for the results in the paper (Python 3.13).
 numpy==2.5.3
 scipy==1.18.1
 matplotlib==3.11.2
 networkx==3.6.1
-sympy==1.14.0        # scripts/09 and 17 (symbolic checks)
+sympy==1.14.0        # kekule_thresholds/scripts/09 and 17 (symbolic checks)
 pyscf==2.14.0
-pyberny==0.7.0
-# figures/plot_figs.py renders text with LaTeX: a TeX installation with amsmath and the cm-super fonts is required.
+pyberny==0.7.0       # kekule_thresholds/dft_validation
+# kekule_thresholds/figures/plot_figs.py renders text with LaTeX: a TeX installation with amsmath and the cm-super fonts is required.
+geometric==1.1.1      # analysis/dft_isomers.py and beyond_huckel/dft_t1.py (version not recorded)
+# analysis/dft_hook_ab.py also calls the xtb program (GFN2-xTB), version 6.5.1, installed separately (conda install -c conda-forge xtb).

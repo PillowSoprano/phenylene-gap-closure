@@ -1,0 +1,8 @@
+max gap at corner (should be 0): 2.2136497134243506e-15
+bound holds (ET1 <= U_exact <= U_quad): True True
+N=4 n=  4 ET1/U_exact mean 0.541 [0.435,0.603]  spearman(U_exact,ET1)=0.800 spearman(rho,ET1)=1.000
+N=5 n=  8 ET1/U_exact mean 0.456 [0.391,0.521]  spearman(U_exact,ET1)=0.786 spearman(rho,ET1)=0.976
+N=6 n= 18 ET1/U_exact mean 0.391 [0.292,0.474]  spearman(U_exact,ET1)=0.864 spearman(rho,ET1)=0.994
+N=7 n= 44 ET1/U_exact mean 0.340 [0.249,0.413]  spearman(U_exact,ET1)=0.831 spearman(rho,ET1)=0.977
+N=8 n=108 ET1/U_exact mean 0.308 [0.211,0.382]  spearman(U_exact,ET1)=0.837 spearman(rho,ET1)=0.981
+N=9 n=282 ET1/U_exact mean 0.280 [0.191,0.355]  spearman(U_exact,ET1)=0.844 spearman(rho,ET1)=0.978

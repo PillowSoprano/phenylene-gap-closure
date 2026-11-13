@@ -1,0 +1,233 @@
+{
+  "status": "formula evaluations and numerical identity checks passed",
+  "arithmetic": "floating point; proof in PROOFS.md",
+  "rows": [
+    {
+      "family": "linear",
+      "N": 2,
+      "mu": 0.6246278565337143,
+      "reference_gap": 1.2651807658182015,
+      "stationarity_residual": 3.6232456269098226e-14,
+      "status": "positive global minorant",
+      "T1_lower": 0.124978849735857,
+      "closure_upper": 1.0028353121620306,
+      "ratio_lower": 0.12462549754696299,
+      "ground_energy_bracket": [
+        -12.527859387648562,
+        -12.527859387648562
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 3,
+      "mu": 0.40533296860658136,
+      "reference_gap": 0.9933021275636329,
+      "stationarity_residual": 4.657037480726527e-11,
+      "status": "positive global minorant",
+      "T1_lower": 0.049990176903575094,
+      "closure_upper": 0.8232916818733074,
+      "ratio_lower": 0.060719885800167545,
+      "ground_energy_bracket": [
+        -18.87672989474335,
+        -18.87672989474335
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 4,
+      "mu": 0.27642738095881925,
+      "reference_gap": 0.8640811802400448,
+      "stationarity_residual": 8.917034961175673e-10,
+      "status": "positive global minorant",
+      "T1_lower": 0.025798838749778782,
+      "closure_upper": 0.6872110852769673,
+      "ratio_lower": 0.03754136000204516,
+      "ground_energy_bracket": [
+        -25.224116507846986,
+        -25.224116507846986
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 6,
+      "mu": 0.16236846376718428,
+      "reference_gap": 0.7499641448577662,
+      "stationarity_residual": 2.029947873239593e-07,
+      "status": "positive global minorant",
+      "T1_lower": 0.011415364938248539,
+      "closure_upper": 0.6273135613907702,
+      "ratio_lower": 0.018197223272107148,
+      "ground_energy_bracket": [
+        -37.91838164733787,
+        -37.91838164733774
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 8,
+      "mu": 0.12059257191797135,
+      "reference_gap": 0.7028823355439201,
+      "stationarity_residual": 4.697029230038011e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.007447231700794701,
+      "closure_upper": 0.6161168014099181,
+      "ratio_lower": 0.01208736993335111,
+      "ground_energy_bracket": [
+        -50.61259929097675,
+        -50.612599290976746
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 12,
+      "mu": 0.09253716510714938,
+      "reference_gap": 0.665636429200475,
+      "stationarity_residual": 5.8654138154963885e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.0051250571640574375,
+      "closure_upper": 0.613821191079542,
+      "ratio_lower": 0.00834943015741095,
+      "ground_energy_bracket": [
+        -76.00103244833907,
+        -76.00103244833906
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 16,
+      "mu": 0.08359158353012171,
+      "reference_gap": 0.6515882608044252,
+      "stationarity_residual": 2.7473799138113725e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.004436272263410928,
+      "closure_upper": 0.6137571897478057,
+      "ratio_lower": 0.007228057507943497,
+      "ground_energy_bracket": [
+        -101.38946558167918,
+        -101.38946558167918
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 24,
+      "mu": 0.07767732320251987,
+      "reference_gap": 0.6410906939109972,
+      "stationarity_residual": 1.5594470929333366e-07,
+      "status": "positive global minorant",
+      "T1_lower": 0.003990596060714599,
+      "closure_upper": 0.6137554446863052,
+      "ratio_lower": 0.006501931828489475,
+      "ground_energy_bracket": [
+        -152.16633184833694,
+        -152.16633184833677
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 32,
+      "mu": 0.07574019850334522,
+      "reference_gap": 0.6372918834596344,
+      "stationarity_residual": 1.1000210570302057e-07,
+      "status": "positive global minorant",
+      "T1_lower": 0.0038451144199874595,
+      "closure_upper": 0.6137554435415726,
+      "ratio_lower": 0.006264896646455587,
+      "ground_energy_bracket": [
+        -202.9431981149945,
+        -202.9431981149944
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 48,
+      "mu": 0.074416764467864,
+      "reference_gap": 0.634522184950994,
+      "stationarity_residual": 5.946771461744768e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.0037451759933314665,
+      "closure_upper": 0.6137554435407206,
+      "ratio_lower": 0.006102065623606948,
+      "ground_energy_bracket": [
+        -304.49693064830956,
+        -304.49693064830956
+      ]
+    },
+    {
+      "family": "linear",
+      "N": 64,
+      "mu": 0.07396966012729753,
+      "reference_gap": 0.6335376375791751,
+      "stationarity_residual": 1.1342454754856859e-07,
+      "status": "positive global minorant",
+      "T1_lower": 0.0037111138101579627,
+      "closure_upper": 0.6137554435409543,
+      "ratio_lower": 0.006046567650377718,
+      "ground_energy_bracket": [
+        -406.050663181625,
+        -406.0506631816249
+      ]
+    },
+    {
+      "family": "selected_tree",
+      "id": "PT02-00001",
+      "mu": 0.624627856533149,
+      "reference_gap": 1.265180765705122,
+      "stationarity_residual": 5.788401657438842e-10,
+      "status": "positive global minorant",
+      "T1_lower": 0.12497884934725735,
+      "closure_upper": 1.002835312161766,
+      "ratio_lower": 0.1246254971594949,
+      "ground_energy_bracket": [
+        -12.52785938764856,
+        -12.52785938764856
+      ]
+    },
+    {
+      "family": "selected_tree",
+      "id": "PT04-00001",
+      "mu": 0.5996736784865926,
+      "reference_gap": 1.1870302733958351,
+      "stationarity_residual": 5.4398772677428694e-09,
+      "status": "positive global minorant",
+      "T1_lower": 0.10562058697457262,
+      "closure_upper": 1.1070023610267228,
+      "ratio_lower": 0.0954113475210763,
+      "ground_energy_bracket": [
+        -25.31579497511371,
+        -25.31579497511371
+      ]
+    },
+    {
+      "family": "selected_tree",
+      "id": "PT08-00001",
+      "mu": 0.5608912002618459,
+      "reference_gap": 0.9511273543001473,
+      "stationarity_residual": 4.244924485557045e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.06342578418654304,
+      "closure_upper": 1.0795073164582705,
+      "ratio_lower": 0.05875438102136739,
+      "ground_energy_bracket": [
+        -50.842980381655956,
+        -50.842980381655956
+      ]
+    },
+    {
+      "family": "selected_tree",
+      "id": "PT08-00049",
+      "mu": 0.3904646838398474,
+      "reference_gap": 0.8936134996134302,
+      "stationarity_residual": 3.565368767959394e-08,
+      "status": "positive global minorant",
+      "T1_lower": 0.03897544092054246,
+      "closure_upper": 0.8246038699952737,
+      "ratio_lower": 0.04726565365351227,
+      "ground_energy_bracket": [
+        -50.76801905275779,
+        -50.76801905275779
+      ]
+    }
+  ],
+  "global_inequality_checks": 160,
+  "smallest_check_margin": 0.00044320212469550594
+}

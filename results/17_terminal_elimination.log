@@ -1,6 +1,0 @@
-Corollary 1 (terminal elimination), exact symbolic check:
-  holds for benzocyclobutadiene and all 40 phenylene constructions with N <= 5
-linear[3]: det T = A_L A_R * (kappa_L*x10*x12 + kappa_R*x13*x9)   [attachment bonds in one Kekule structure of the middle ring: False]
-    {'rho': 0.119725923, 'kappa_L': 0.0, 'kappa_R': 0.0, 'kappa_equal': 0.5, 'max_abs_kappa_on_face': 0.0, 'max_abs_det_on_face': 0.0}
-angular[3]: det T = A_L A_R * (kappa_L*kappa_R*x12 + x11*x13*x9)   [attachment bonds in one Kekule structure of the middle ring: True]
-    {'rho': 0.1961605581, 'kappa_L': -0.4223593973, 'kappa_R': 1.028102218, 'kappa_equal': 0.5, 'Pi_over_tau': 0.4342286331, 'kappa_L_kappa_R': -0.4342286331, 'mirror_maps_L_to_R_and_fixes_Pi_tau': True}

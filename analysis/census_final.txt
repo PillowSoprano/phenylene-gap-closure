@@ -1,0 +1,24 @@
+N=8 (108)
+  HSSH  rho 0.981 g0 0.956 lin_K 0.963 lin_F 0.948 g2P 0.866
+  PPP   rho 0.970 g0 0.910 lin_K 0.905 lin_F 0.886 g2P 0.821 PPPgap 0.839
+N=9 (281)
+  HSSH  rho 0.980 g0 0.954 lin_K 0.961 lin_F 0.942 g2P 0.850
+  PPP   rho 0.958 g0 0.897 lin_K 0.892 lin_F 0.873 g2P 0.795 PPPgap 0.824
+N=9 HSSH rho-g0 0.026 CI [0.014, 0.040]
+N=9 HSSH rho-lin_K 0.019 CI [0.008, 0.031]
+N=9 PPP rho-g0 0.062 CI [0.041, 0.087]
+N=9 PPP rho-lin_K 0.066 CI [0.046, 0.092]
+class level by N (rho vs Hueckel gap):
+  N=4 n=  4 HSSH rho 1.000 gap 1.000 | PPP rho 1.000 gap 1.000
+  N=5 n=  8 HSSH rho 0.976 gap 1.000 | PPP rho 0.976 gap 0.952
+  N=6 n= 18 HSSH rho 0.994 gap 0.955 | PPP rho 0.971 gap 0.948
+  N=7 n= 44 HSSH rho 0.976 gap 0.956 | PPP rho 0.967 gap 0.921
+  N=8 n=108 HSSH rho 0.981 gap 0.956 | PPP rho 0.970 gap 0.910
+  N=9 n=281 HSSH rho 0.980 gap 0.954 | PPP rho 0.958 gap 0.897
+N=8 equal-rho group of 2 classes: rho 0.1564, PPP T1 range 0.104 eV, HSSH T1 range 0.0163 |beta|, gap range 0.074
+N=8 equal-rho group of 6 classes: rho 0.1197, PPP T1 range 0.063 eV, HSSH T1 range 0.0146 |beta|, gap range 0.057
+   N=8 PPP T1 SD 0.146 range 0.647
+N=9 equal-rho group of 3 classes: rho 0.1265, PPP T1 range 0.082 eV, HSSH T1 range 0.0090 |beta|, gap range 0.015
+N=9 equal-rho group of 19 classes: rho 0.1197, PPP T1 range 0.105 eV, HSSH T1 range 0.0459 |beta|, gap range 0.099
+   N=9 PPP T1 SD 0.133 range 0.619
+N=4 PPP lowest T1: {'PT04-00001': 2.186, 'PT04-00002': 2.05, 'PT04-00003': 1.865, 'PT04-00004': 1.705}

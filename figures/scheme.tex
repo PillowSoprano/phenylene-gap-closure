@@ -1,0 +1,53 @@
+% Mechanism sketch (Fig. 2): one-dimensional model of Section 5, with biphenylene drawn along the path.
+\definecolor{band}{HTML}{F2C14E}
+\begin{tikzpicture}[x=5.2cm,y=3.0cm,>=stealth]
+% --- biphenylene drawing: #1 = scale of the distortion (0 none, 1 closing pattern)
+\newcommand{\bph}[3]{% x position, y position, stage (0, 1 or 2)
+  \begin{scope}[shift={(#1,#2)},x=0.30cm,y=0.30cm]
+    \pgfmathsetmacro{\c}{0.8660}
+    \coordinate (L30) at ({-0.5},0.5);  \coordinate (L330) at ({-0.5},-0.5);
+    \coordinate (L90) at ({-0.5-\c},1); \coordinate (L150) at ({-0.5-2*\c},0.5);
+    \coordinate (L210) at ({-0.5-2*\c},-0.5); \coordinate (L270) at ({-0.5-\c},-1);
+    \coordinate (R150) at (0.5,0.5);   \coordinate (R210) at (0.5,-0.5);
+    \coordinate (R90) at ({0.5+\c},1); \coordinate (R30) at ({0.5+2*\c},0.5);
+    \coordinate (R330) at ({0.5+2*\c},-0.5); \coordinate (R270) at ({0.5+\c},-1);
+    \ifcase#3
+      \tikzset{up/.style={black,line width=0.9pt},dn/.style={black,line width=0.9pt}}
+    \or
+      \tikzset{up/.style={hi!75,line width=1.6pt},dn/.style={lo!70,line width=0.7pt}}
+    \or
+      \tikzset{up/.style={hi,line width=2.4pt},dn/.style={lo,line width=0.45pt}}
+    \fi
+    % bonds of the minority structure M- (raised by the closing pattern)
+    \draw[up] (L30)--(R150); \draw[up] (L330)--(R210);
+    \draw[up] (L90)--(L150); \draw[up] (L210)--(L270);
+    \draw[up] (R90)--(R30);  \draw[up] (R330)--(R270);
+    % all other bonds (lowered)
+    \draw[dn] (L30)--(L330); \draw[dn] (L30)--(L90); \draw[dn] (L150)--(L210); \draw[dn] (L270)--(L330);
+    \draw[dn] (R150)--(R210); \draw[dn] (R150)--(R90); \draw[dn] (R30)--(R330); \draw[dn] (R270)--(R210);
+  \end{scope}}
+% --- distance to closure, shaded band
+\fill[band!60] (0,-0.15) rectangle (1,-0.04);
+\node[font=\small] at (0.5,-0.095) {distance to a closed gap, $\rho$};
+\draw[->,black!60] (0,0) -- (1.12,0) node[right,font=\small,black!70] {distortion};
+% --- energy curves (U = 1.1, vertical gap 1; triplet minimum at r = 0.45)
+\draw[black,line width=1.2pt,domain=0:1.04,samples=60] plot (\x,{1.1*\x*\x});
+\node[font=\small,anchor=west] at (1.04,{1.1*1.04*1.04}) {ground state $S_0$};
+\draw[hi,line width=1.2pt,domain=0:1,samples=60] plot (\x,{1.1*\x*\x+1-\x});
+\node[font=\small,hi,anchor=west] at (1.03,1.0) {triplet $T_1$};
+% vertical gap
+\draw[<->,black!70,line width=0.6pt] (-0.03,0) -- (-0.03,1) node[midway,left,font=\small,align=right] {gap at the\\ground-state\\geometry};
+% relaxation arrow and relaxed triplet
+\fill[hi] (0,1) circle (1.6pt);
+\fill[hi] (0.4545,0.7727) circle (1.6pt);
+\draw[->,hi!80!black,line width=0.8pt] (0.06,1.06) to[bend left=12] node[above,font=\small] {relaxes} (0.42,0.86);
+\node[font=\small,hi!80!black,anchor=north east] at (0.44,0.75) {relaxed triplet};
+% touching point
+\draw[black,line width=0.8pt,fill=white] (1,1.1) circle (1.1pt);
+\node[font=\small,anchor=east,align=right] at (0.97,1.2) {surfaces touch,\\gap closed};
+% --- biphenylene along the path, with guides to the curves
+\foreach \xx/\yy in {0/0, 0.4545/0.7727, 1/1.1} \draw[black!35,densely dotted] (\xx,-0.27) -- (\xx,\yy);
+\bph{0}{-0.42}{0}  \node[font=\small,anchor=north] at (0,-0.60) {ground state};
+\bph{0.4545}{-0.42}{1} \node[font=\small,anchor=north] at (0.4545,-0.60) {triplet};
+\bph{1}{-0.42}{2}  \node[font=\small,anchor=north] at (1,-0.60) {closed gap};
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+benzene                6   6 K=  2 ASC= 2 neg= 0 gap=2.000 rho=1.0000 single_up=inf single_any=inf
+naphthalene           10  11 K=  3 ASC= 3 neg= 0 gap=1.236 rho=1.0000 single_up=inf single_any=inf
+benzocyclobutadiene    8   9 K=  3 ASC= 1 neg= 1 gap=0.525 rho=0.1197 single_up=1.000 single_any=0.500
+biphenylene           12  14 K=  5 ASC= 3 neg= 1 gap=0.890 rho=0.1888 single_up=3.000 single_any=3.000
+linear [3]            18  22 K= 12 ASC= 4 neg= 4 gap=0.525 rho=0.1197 single_up=2.000 single_any=1.000
+angular [3]           18  22 K= 13 ASC= 5 neg= 4 gap=0.844 rho=0.1962 single_up=5.000 single_any=5.000
+linear [4]            24  30 K= 29 ASC= 5 neg=12 gap=0.348 rho=0.0756 single_up=1.250 single_any=0.833
+bent [4]              24  30 K= 31 ASC= 7 neg=12 gap=0.565 rho=0.1265 single_up=2.333 single_any=2.333
+helical [4]           24  30 K= 34 ASC= 8 neg=13 gap=0.703 rho=0.1614 single_up=4.000 single_any=4.000
+zigzag [4]            24  30 K= 34 ASC= 8 neg=13 gap=0.743 rho=0.1614 single_up=4.000 single_any=4.000
+triangular [4]        24  30 K= 35 ASC= 9 neg=13 gap=0.905 rho=0.2031 single_up=9.000 single_any=9.000

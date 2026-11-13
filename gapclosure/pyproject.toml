@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gapclosure"
+version = "0.1.0"
+description = "Hückel gap-closure thresholds, closing patterns and closing orbitals of conjugated hydrocarbons"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Xiyao Yu", email = "XYU029@e.ntu.edu.sg" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "matplotlib>=3.5"]
+keywords = ["Hückel", "HOMO-LUMO gap", "Kekulé structures", "phenylenes", "interval matrices", "regularity radius"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Chemistry",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+rdkit = ["rdkit"]
+test = ["pytest"]
+
+[project.scripts]
+gapclosure = "gapclosure.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

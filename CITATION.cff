@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
-title: "Signed Kekulé structures and Hückel gap-closure thresholds in phenylenes: code and data"
+title: "The distance to gap closure sets the triplet energy of phenylenes: code and data"
 authors:
   - family-names: "Yu"
     given-names: "Xiyao"
@@ -10,5 +10,5 @@ authors:
 license: MIT
 repository-code: "https://github.com/PillowSoprano/phenylene-gap-closure"
 doi: "10.5281/zenodo.23448791"
-date-released: 2026-11-03
-version: "1.2.0"
+date-released: 2026-11-13
+version: "2.0.0"
