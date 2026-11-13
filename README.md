@@ -38,7 +38,9 @@ Run every script from its own folder (`cd analysis; python census_final.py`); pa
 | Section 5, Fig. 5: E_T1/U between 0.73 and 0.87 (mean 0.82); r between 0.45 and 0.62; Eq. (9) within 11 %, correlation 0.985; Spearman 0.983 (ρ) and 0.980 (U) | `beyond_huckel/l2nearest.py`, then `analysis/section5_ratio.py` | `beyond_huckel/l2nearest.npy` |
 | Section 5: the cheapest closed-gap geometry lies 1–2 % below U | `closure_energy/cheapest_closure.py` | reads `beyond_huckel/l2nearest_points.json` |
 | Section 5: two acenes joined through a four-membered ring, E_T1/U from 0.87 to 0.003, closure cost about 1.8 \|β\| | `closure_energy/acene_matching_closure.py` | `closure_energy/acene_matching_closure.json` |
-| Table 1, Section 6: Spearman correlations of ρ and five other predictors; bootstrap intervals | `analysis/competitors.py`, then `analysis/census_final.py`; checks in `analysis/check_competitors.py` | `analysis/census_final.txt` |
+| Table 1, Section 6: Spearman correlations of ρ and the gap-based predictors; bootstrap intervals | `analysis/competitors.py`, then `analysis/census_final.py`; checks in `analysis/check_competitors.py` | `analysis/census_final.txt` |
+| Table 1, Section 6: longest run of linear rings; 4332 pairs with the same longest run, ρ correct in 81 %, gap in 66 % | `analysis/longest_linear_run.py` | printed |
+| Table 1 (B3LYP//xTB row), Section 6, Table S5: B3LYP//xTB triplet energies of all 170 classes with six to eight rings; correlations, bootstrap intervals and pairs | `analysis/dft_census/phenylene_dft_colab.ipynb` (runs `phenylene_dft.py` on a GPU), then `analysis/dft_census/analyse.py` | `analysis/dft_census/results_N6-8.json` |
 | Section 6: lowest PPP triplet of every class | `analysis/ppp_bs.py`, `analysis/ppp_bs_analyse.py`, `analysis/s0_bs_check.py` | `analysis/ppp_bs_classes.jsonl`, `ppp_bs_summary.txt`, `s0_bs_check.json` |
 | Section 6: the gap orders 11 % of cross-class pairs wrongly at N = 9 | `analysis/tiebreak.py` | printed |
 | Section 6: where A and B close their gap (90 % of the closing orbital on a linear [3] unit, 89 % of the triplet change, 99 % sign agreement) | `analysis/hook_ab_closure.py ../gapclosure/src ../beyond_huckel/patterns_N2-9.json` | `analysis/hook_ab_closure.json` |
@@ -65,10 +67,10 @@ Run every script from its own folder (`cd analysis; python census_final.py`); pa
 | S6: lower bound (0.006 against 0.85 for linear [64]phenylene) | `closure_energy/global_lower_bound.py`, `closure_energy/linear_scaling.py` | `closure_energy/global_lower_bound.json`, `linear_scaling.json` |
 | S7: Hückel–SSH triplets of all classes | `beyond_huckel/t1_scan.py` | `beyond_huckel/t1_scan.json` |
 | S7: perturbed starts lower the Hückel–SSH triplet in 12 of 467 classes, by at most 0.022 \|β\| | `analysis/hssh_bs_scan.py` | `analysis/hssh_bs_classes.json` |
-| Table S5: Spearman correlation by N; Table S8: classes of equal ρ | `analysis/census_final.py` | `analysis/census_final.txt` |
-| Table S6: PPP triplets in the symmetric convention | `beyond_huckel/ppp_scan.py`; `beyond_huckel/an_ppp2.py ppp_scan_N8.json ppp_base_N9-9.json ppp_rohf_ohno_N2-9.json ppp_rohf_mn_N2-9.json ppp_rohf_u8_N2-9.json` | `beyond_huckel/ppp_*.json` |
-| Table S7: molecules within classes | `analysis/within_class.py` (or `within_class_chunk.py N start stop`), `analysis/within_class_analyse.py`, `analysis/tiebreak.py` | `analysis/within_class_mols.jsonl`, `within_class_summary.txt` |
-| Table S9: UB3LYP triplets of seven synthesized phenylenes | `beyond_huckel/dft_t1.py`, `analysis/dft_isomers.py` | `beyond_huckel/dft_t1_*.json`, `analysis/dft_isomers.json` |
+| Table S6: Spearman correlation by N; Table S9: classes of equal ρ | `analysis/census_final.py` | `analysis/census_final.txt` |
+| Table S7: PPP triplets in the symmetric convention | `beyond_huckel/ppp_scan.py`; `beyond_huckel/an_ppp2.py ppp_scan_N8.json ppp_base_N9-9.json ppp_rohf_ohno_N2-9.json ppp_rohf_mn_N2-9.json ppp_rohf_u8_N2-9.json` | `beyond_huckel/ppp_*.json` |
+| Table S8: molecules within classes | `analysis/within_class.py` (or `within_class_chunk.py N start stop`), `analysis/within_class_analyse.py`, `analysis/tiebreak.py` | `analysis/within_class_mols.jsonl`, `within_class_summary.txt` |
+| Table S10: UB3LYP triplets of seven synthesized phenylenes | `beyond_huckel/dft_t1.py`, `analysis/dft_isomers.py` | `beyond_huckel/dft_t1_*.json`, `analysis/dft_isomers.json` |
 | Table S4: B3LYP//xTB protocol, molecules A and B | `analysis/dft_hook_ab.py` | `analysis/dft_hook_ab_*.json` |
 | S7, Fig. S3: steepest descent of the B3LYP gap, cos_F = 0.989 | `kekule_thresholds/dft_validation/` (see below) | `kekule_thresholds/dft_validation/*_points.json`, `gapgrad_analysis.json` |
 | S7: nearest closed-gap point | `beyond_huckel/l2nearest.py` | `beyond_huckel/l2nearest.npy` |

@@ -7,5 +7,6 @@ sympy==1.14.0        # kekule_thresholds/scripts/09 and 17 (symbolic checks)
 pyscf==2.14.0
 pyberny==0.7.0       # kekule_thresholds/dft_validation
 # kekule_thresholds/figures/plot_figs.py renders text with LaTeX: a TeX installation with amsmath and the cm-super fonts is required.
-geometric==1.1.1      # analysis/dft_isomers.py and beyond_huckel/dft_t1.py (version not recorded)
+geometric==1.1.1      # analysis/dft_isomers.py and beyond_huckel/dft_t1.py
 # analysis/dft_hook_ab.py also calls the xtb program (GFN2-xTB), version 6.5.1, installed separately (conda install -c conda-forge xtb).
+# analysis/dft_census/phenylene_dft_colab.ipynb installs gpu4pyscf-cuda12x and cutensor-cu12 on a GPU runtime (Google Colab, A100).
